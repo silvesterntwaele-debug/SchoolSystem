@@ -1,4 +1,3 @@
-<img width="1876" height="895" alt="UserManagement" src="https://github.com/user-attachments/assets/ef4849b3-9930-4c87-9d45-0c89400ed78d" />
 
 # 🎓 School Management System
 
@@ -196,6 +195,7 @@ Built as a university project to demonstrate full-stack web development using **
 ## 📄 License
 
 This project is intended for educational and portfolio purposes.<img width="1883" height="977" alt="StudentDashBoard" src="https://github.com/user-attachments/assets/bceb4dde-ad2e-45bf-aa23-62d6ec8484f9" />
+<img width="1876" height="895" alt="UserManagement" src="https://github.com/user-attachments/assets/ef4849b3-9930-4c87-9d45-0c89400ed78d" />
 <img width="1867" height="891" alt="Login" src="https://github.com/user-attachments/assets/9bfc6cc0-2740-41b8-99dc-66109930b514" />
 <img width="1886" height="922" alt="LecturerDashBoard" src="https://github.com/user-attachments/assets/1d39526d-ad18-4326-9498-2d3a2e84b9be" />
 <img width="1880" height="911" alt="AdminDashBoard" src="https://github.com/user-attachments/assets/a0722df8-bd53-4096-b65d-1de567d96476" />
