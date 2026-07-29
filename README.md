@@ -1,4 +1,5 @@
-![Uploading UserManagement.PNG…]()
+<img width="1876" height="895" alt="UserManagement" src="https://github.com/user-attachments/assets/ef4849b3-9930-4c87-9d45-0c89400ed78d" />
+
 # 🎓 School Management System
 
 A comprehensive **School Management System** built using **ASP.NET Core MVC**, **C#**, **Entity Framework Core**, **SQL Server**, and **ASP.NET Identity**. The system provides secure role-based access for **Administrators**, **Lecturers**, and **Students** while managing academic records, module registrations, assessments, invoicing, payments, and examination schedules.
