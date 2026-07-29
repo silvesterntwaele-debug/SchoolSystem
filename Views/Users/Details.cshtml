@@ -1,0 +1,48 @@
+﻿@model SchoolSystem.ViewModels.UserViewModel
+
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<div class="container mt-4">
+
+    <h2>User Details</h2>
+
+    <hr />
+
+    <dl class="row">
+
+        <dt class="col-sm-3">Username</dt>
+        <dd class="col-sm-9">@Model.UserName</dd>
+
+        <dt class="col-sm-3">Email</dt>
+        <dd class="col-sm-9">@Model.Email</dd>
+
+        <dt class="col-sm-3">Role</dt>
+        <dd class="col-sm-9">@Model.Role</dd>
+
+        <dt class="col-sm-3">Student Number</dt>
+        <dd class="col-sm-9">@Model.StudentNumber</dd>
+
+        <dt class="col-sm-3">Staff Number</dt>
+        <dd class="col-sm-9">@Model.StaffNumber</dd>
+
+        <dt class="col-sm-3">Email Confirmed</dt>
+        <dd class="col-sm-9">
+            @(Model.EmailConfirmed ? "Yes" : "No")
+        </dd>
+
+    </dl>
+
+    <a asp-action="Edit"
+       asp-route-id="@Model.Id"
+       class="btn btn-warning">
+        Edit
+    </a>
+
+    <a asp-action="Index"
+       class="btn btn-secondary">
+        Back
+    </a>
+
+</div>

@@ -1,0 +1,254 @@
+﻿@model IEnumerable<SchoolSystem.ViewModels.UserViewModel>
+
+@{
+    ViewData["Title"] = "User Management";
+}
+
+<div class="container mt-4">
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show">
+
+            @TempData["Success"]
+
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert">
+            </button>
+
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show">
+
+            @TempData["Error"]
+
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert">
+            </button>
+
+        </div>
+    }
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+
+            <h2>User Management</h2>
+
+            <p class="text-muted">
+                Manage all system users.
+            </p>
+
+        </div>
+
+        <a asp-controller="Account"
+           asp-action="Register"
+           class="btn btn-primary">
+            Register New User
+        </a>
+
+    </div>
+
+    <div class="card shadow">
+
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+
+            <h5 class="mb-0">System Users</h5>
+
+            <span class="badge bg-light text-dark">
+                Total Users: @Model.Count()
+            </span>
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="mb-3">
+
+                <input type="text"
+                       id="searchUser"
+                       class="form-control"
+                       placeholder="Search by username, email, role, student number or staff number..." />
+
+            </div>
+
+            <div class="table-responsive">
+
+                <table class="table table-hover table-striped align-middle"
+                       id="userTable">
+
+                    <thead class="table-dark">
+
+                        <tr>
+
+                            <th>Username</th>
+
+                            <th>Email</th>
+
+                            <th>Role</th>
+
+                            <th>Student Number</th>
+
+                            <th>Staff Number</th>
+
+                            <th>Email Confirmed</th>
+
+                            <th width="260">Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        @if (Model.Any())
+                        {
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+                                    <td>@item.UserName</td>
+
+                                    <td>@item.Email</td>
+
+                                    <td>
+
+                                        @if (item.Role == "Admin")
+                                        {
+                                            <span class="badge bg-danger">
+                                                Admin
+                                            </span>
+                                        }
+                                        else if (item.Role == "Lecturer")
+                                        {
+                                            <span class="badge bg-success">
+                                                Lecturer
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-primary">
+                                                Student
+                                            </span>
+                                        }
+
+                                    </td>
+
+                                    <td>
+                                        @(string.IsNullOrWhiteSpace(item.StudentNumber)
+                                            ? "-"
+                                            : item.StudentNumber)
+                                    </td>
+
+                                    <td>
+                                        @(string.IsNullOrWhiteSpace(item.StaffNumber)
+                                            ? "-"
+                                            : item.StaffNumber)
+                                    </td>
+
+                                    <td>
+
+                                        @if (item.EmailConfirmed)
+                                        {
+                                            <span class="badge bg-success">
+                                                Yes
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-warning text-dark">
+                                                No
+                                            </span>
+                                        }
+
+                                    </td>
+
+                                    <td>
+
+                                        <a asp-action="Details"
+                                           asp-route-id="@item.Id"
+                                           class="btn btn-info btn-sm">
+                                            Details
+                                        </a>
+
+                                        <a asp-action="Edit"
+                                           asp-route-id="@item.Id"
+                                           class="btn btn-warning btn-sm">
+                                            Edit
+                                        </a>
+
+                                        <a asp-action="Delete"
+                                           asp-route-id="@item.Id"
+                                           class="btn btn-danger btn-sm">
+                                            Delete
+                                        </a>
+
+                                    </td>
+
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+
+                                <td colspan="7"
+                                    class="text-center text-muted py-4">
+                                    No users found.
+                                </td>
+
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr />
+
+    <div class="mt-3">
+
+        <a asp-controller="Admin"
+           asp-action="AdminDashboard"
+           class="btn btn-secondary">
+            ← Back to Admin Dashboard
+        </a>
+
+    </div>
+
+</div>
+
+@section Scripts {
+
+    <script>
+
+        document.getElementById("searchUser").addEventListener("keyup", function() {
+
+            let filter = this.value.toLowerCase();
+
+            let rows = document.querySelectorAll("#userTable tbody tr");
+
+            rows.forEach(function(row) {
+
+                let text = row.innerText.toLowerCase();
+
+                row.style.display = text.includes(filter) ? "" : "none";
+
+            });
+
+        });
+
+    </script>
+
+}

@@ -1,0 +1,72 @@
+@model SchoolSystem.Models.Mark
+
+@{
+    ViewData["Title"] = "Edit Mark";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-warning">
+            <h3>Edit Mark</h3>
+        </div>
+
+        <div class="card-body">
+
+            <form asp-action="Edit">
+
+                <input type="hidden" asp-for="MarkId" />
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="StudentId"></label>
+                    <select asp-for="StudentId"
+                            asp-items="ViewBag.StudentId"
+                            class="form-select">
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ModuleId"></label>
+                    <select asp-for="ModuleId"
+                            asp-items="ViewBag.ModuleId"
+                            class="form-select">
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="AssessmentType"></label>
+                    <select asp-for="AssessmentType"
+                            asp-items="Html.GetEnumSelectList<AssessmentType>()"
+                            class="form-select">
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Score"></label>
+                    <input asp-for="Score" class="form-control" />
+                </div>
+
+                <button class="btn btn-primary">
+                    Save Changes
+                </button>
+
+                <a asp-action="Index" class="btn btn-secondary">
+                    Back
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

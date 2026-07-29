@@ -1,0 +1,125 @@
+@model IEnumerable<SchoolSystem.Models.ExamTimetable>
+
+@{
+    ViewData["Title"] = "Exam Timetables";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow-lg border-0">
+
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+
+            <h3 class="mb-0">Exam Timetables</h3>
+
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-action="Create"
+                   class="btn btn-light">
+                    <i class="bi bi-plus-circle"></i> Create New
+                </a>
+            }
+
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-hover table-striped align-middle">
+
+                <thead class="table-dark">
+
+                    <tr>
+                        <th>Module</th>
+                        <th>Exam Date</th>
+                        <th>Start Time</th>
+                        <th>Duration</th>
+                        <th>Venue</th>
+                        <th width="250">Actions</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <td>@item.Module?.Code</td>
+
+                            <td>@item.ExamDate.ToString("dd MMM yyyy")</td>
+
+                            <td>@item.StartTime.ToString(@"hh\:mm")</td>
+
+                            <td>@item.DurationMinutes mins</td>
+
+                            <td>@item.Venue</td>
+
+                            <td>
+
+                                <a asp-action="Details"
+                                   asp-route-id="@item.ExamTimetableId"
+                                   class="btn btn-info btn-sm">
+                                    Details
+                                </a>
+
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <a asp-action="Edit"
+                                       asp-route-id="@item.ExamTimetableId"
+                                       class="btn btn-warning btn-sm">
+                                        Edit
+                                    </a>
+
+                                    <a asp-action="Delete"
+                                       asp-route-id="@item.ExamTimetableId"
+                                       class="btn btn-danger btn-sm">
+                                        Delete
+                                    </a>
+                                }
+
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="card-footer">
+
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-controller="Admin"
+                   asp-action="AdminDashboard"
+                   class="btn btn-secondary">
+                    ← Back to Admin Dashboard
+                </a>
+            }
+
+            @if (User.IsInRole("Lecturer"))
+            {
+                <a asp-controller="Lecturer"
+                   asp-action="LecturerDashboard"
+                   class="btn btn-secondary">
+                    ← Back to Lecturer Dashboard
+                </a>
+            }
+
+            @if (User.IsInRole("Student"))
+            {
+                <a asp-controller="Student"
+                   asp-action="StudentDashboard"
+                   class="btn btn-secondary">
+                    ← Back to Student Dashboard
+                </a>
+            }
+
+        </div>
+
+    </div>
+
+</div>

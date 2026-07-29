@@ -1,0 +1,82 @@
+@model SchoolSystem.Models.Module
+
+@{
+    ViewData["Title"] = "Create Module";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-primary text-white">
+            <h3>Create Module</h3>
+        </div>
+
+        <div class="card-body">
+
+            <form asp-action="Create">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Code"></label>
+                    <input asp-for="Code" class="form-control" />
+                    <span asp-validation-for="Code" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Credits"></label>
+                    <input asp-for="Credits" class="form-control" />
+                    <span asp-validation-for="Credits" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Capacity"></label>
+                    <input asp-for="Capacity" class="form-control" />
+                    <span asp-validation-for="Capacity" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="LecturerId"></label>
+                    <select asp-for="LecturerId"
+                            asp-items="ViewBag.LecturerId"
+                            class="form-select">
+
+                        <option value="">-- Select Lecturer --</option>
+
+                    </select>
+
+                    <span asp-validation-for="LecturerId" class="text-danger"></span>
+
+                </div>
+
+                <button class="btn btn-success">
+                    Save
+                </button>
+
+                <a asp-action="Index"
+                   class="btn btn-secondary">
+                    Cancel
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+}

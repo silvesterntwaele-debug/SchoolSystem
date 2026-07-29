@@ -1,0 +1,64 @@
+@model SchoolSystem.Models.Payment
+
+@{
+    ViewData["Title"] = "Payment Details";
+}
+
+<h2>Payment Details</h2>
+
+<hr />
+
+<dl class="row">
+
+    <dt class="col-sm-3">
+        Student Number
+    </dt>
+
+    <dd class="col-sm-9">
+        @Model.Invoice.Student.StudentNumber
+    </dd>
+
+    <dt class="col-sm-3">
+        Invoice
+    </dt>
+
+    <dd class="col-sm-9">
+        @Model.Invoice.InvoiceId
+    </dd>
+
+    <dt class="col-sm-3">
+        Amount
+    </dt>
+
+    <dd class="col-sm-9">
+        @Model.Amount.ToString("C")
+    </dd>
+
+    <dt class="col-sm-3">
+        Reference
+    </dt>
+
+    <dd class="col-sm-9">
+        @Model.Reference
+    </dd>
+
+    <dt class="col-sm-3">
+        Paid On
+    </dt>
+
+    <dd class="col-sm-9">
+        @Model.PaidOn
+    </dd>
+
+</dl>
+
+<a asp-action="Edit"
+   asp-route-id="@Model.PaymentId"
+   class="btn btn-warning">
+    Edit
+</a>
+
+<a asp-action="Index"
+   class="btn btn-secondary">
+    Back
+</a>

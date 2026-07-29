@@ -1,0 +1,75 @@
+﻿@model StudentModuleMarkSheet
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container mt-4">
+
+    <div class="card border-danger shadow">
+
+        <div class="card-header bg-danger text-white">
+
+            <h3>Delete Mark Sheet</h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <h5>
+
+                Are you sure you want to delete this mark sheet?
+
+            </h5>
+
+            <hr />
+
+            <p>
+
+                <b>Student:</b>
+
+                @Model.Student?.StudentNumber
+
+            </p>
+
+            <p>
+
+                <b>Module:</b>
+
+                @Model.Module?.Code
+
+            </p>
+
+            <p>
+
+                <b>Final Mark:</b>
+
+                @Model.FinalMark %
+
+            </p>
+
+            <form asp-action="Delete">
+
+                <input type="hidden"
+                       asp-for="StudentModuleMarkSheetId" />
+
+                <button class="btn btn-danger">
+
+                    Delete
+
+                </button>
+
+                <a asp-action="Index"
+                   class="btn btn-secondary">
+
+                    Cancel
+
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

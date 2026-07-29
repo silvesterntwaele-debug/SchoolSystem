@@ -1,0 +1,70 @@
+@model SchoolSystem.Models.Lecturer
+
+@{
+    ViewData["Title"] = "Create Lecturer";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-success text-white">
+            <h3>Create Lecturer</h3>
+        </div>
+
+        <div class="card-body">
+
+            <form asp-action="Create">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <!-- User -->
+                <div class="mb-3">
+                    <label asp-for="UserID" class="form-label"></label>
+
+                    <select asp-for="UserID"
+                            class="form-select"
+                            asp-items="ViewBag.UserID">
+
+                        <option value="">-- Select User --</option>
+
+                    </select>
+
+                    <span asp-validation-for="UserID" class="text-danger"></span>
+                </div>
+
+                <!-- Staff Number -->
+                <div class="mb-3">
+                    <label asp-for="StaffNumber" class="form-label"></label>
+                    <input asp-for="StaffNumber" class="form-control" />
+                    <span asp-validation-for="StaffNumber" class="text-danger"></span>
+                </div>
+
+                <!-- Department -->
+                <div class="mb-3">
+                    <label asp-for="Department" class="form-label"></label>
+                    <input asp-for="Department" class="form-control" />
+                    <span asp-validation-for="Department" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-success">
+                    Create Lecturer
+                </button>
+
+                <a asp-action="Index" class="btn btn-secondary">
+                    Back to List
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

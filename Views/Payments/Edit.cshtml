@@ -1,0 +1,76 @@
+@model SchoolSystem.Models.Payment
+
+@{
+    ViewData["Title"] = "Edit Payment";
+}
+
+<h2>Edit Payment</h2>
+
+<hr />
+
+<div class="row">
+
+<div class="col-md-6">
+
+<form asp-action="Edit">
+
+    <input type="hidden"
+           asp-for="PaymentId"/>
+
+    <div asp-validation-summary="ModelOnly"
+         class="text-danger">
+    </div>
+
+    <div class="mb-3">
+
+        <label asp-for="InvoiceId"
+               class="form-label"></label>
+
+        <select asp-for="InvoiceId"
+                class="form-control"
+                asp-items="ViewBag.InvoiceId">
+        </select>
+
+    </div>
+
+    <div class="mb-3">
+
+        <label asp-for="Amount"
+               class="form-label"></label>
+
+        <input asp-for="Amount"
+               class="form-control"/>
+
+    </div>
+
+    <div class="mb-3">
+
+        <label asp-for="Reference"
+               class="form-label"></label>
+
+        <input asp-for="Reference"
+               class="form-control"/>
+
+    </div>
+
+    <button type="submit"
+            class="btn btn-warning">
+        Save Changes
+    </button>
+
+    <a asp-action="Index"
+       class="btn btn-secondary">
+        Cancel
+    </a>
+
+</form>
+
+</div>
+
+</div>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

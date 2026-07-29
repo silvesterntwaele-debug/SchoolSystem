@@ -1,0 +1,64 @@
+@model SchoolSystem.Models.Lecturer
+
+@{
+    ViewData["Title"] = "Edit Lecturer";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-warning text-dark">
+            <h3>Edit Lecturer</h3>
+        </div>
+
+        <div class="card-body">
+
+            <form asp-action="Edit">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <input type="hidden" asp-for="LecturerId" />
+                <input type="hidden" asp-for="UserID" />
+
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input class="form-control"
+                           value="@(Model.User?.Email ?? "No User Assigned")"
+                           readonly />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="StaffNumber" class="form-label"></label>
+                    <input asp-for="StaffNumber" class="form-control" />
+                    <span asp-validation-for="StaffNumber" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Department" class="form-label"></label>
+                    <input asp-for="Department" class="form-control" />
+                    <span asp-validation-for="Department" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-warning">
+                    💾 Save Changes
+                </button>
+
+                <a asp-action="Index" class="btn btn-secondary">
+                    Cancel
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

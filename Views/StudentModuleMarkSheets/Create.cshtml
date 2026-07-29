@@ -1,0 +1,134 @@
+﻿@model StudentModuleMarkSheet
+
+@{
+    ViewData["Title"] = "Create Mark Sheet";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-primary text-white">
+
+            <h3>Create Student Mark Sheet</h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <form asp-action="Create">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label asp-for="StudentId"></label>
+
+                        <select asp-for="StudentId"
+                                asp-items="ViewBag.StudentId"
+                                class="form-select"></select>
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label asp-for="ModuleId"></label>
+
+                        <select asp-for="ModuleId"
+                                asp-items="ViewBag.ModuleId"
+                                class="form-select"></select>
+
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+
+                        <label asp-for="Test1"></label>
+
+                        <input asp-for="Test1" class="form-control" />
+
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+
+                        <label asp-for="Test2"></label>
+
+                        <input asp-for="Test2" class="form-control" />
+
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+
+                        <label asp-for="Test3"></label>
+
+                        <input asp-for="Test3" class="form-control" />
+
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+
+                        <label asp-for="Assignment1"></label>
+
+                        <input asp-for="Assignment1" class="form-control" />
+
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+
+                        <label asp-for="Assignment2"></label>
+
+                        <input asp-for="Assignment2" class="form-control" />
+
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+
+                        <label asp-for="Practical"></label>
+
+                        <input asp-for="Practical" class="form-control" />
+
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+
+                        <label asp-for="Project"></label>
+
+                        <input asp-for="Project" class="form-control" />
+
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+
+                        <label asp-for="Exam"></label>
+
+                        <input asp-for="Exam" class="form-control" />
+
+                    </div>
+
+                </div>
+
+                <button class="btn btn-success">
+                    Save
+                </button>
+
+                <a asp-action="Index"
+                   class="btn btn-secondary">
+                    Back
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+}

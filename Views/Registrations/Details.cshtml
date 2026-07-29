@@ -1,0 +1,71 @@
+@model SchoolSystem.Models.Registration
+
+@{
+    ViewData["Title"] = "Registration Details";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-info text-white">
+            <h3>Registration Details</h3>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-bordered">
+
+                <tr>
+                    <th width="30%">Student Number</th>
+                    <td>@Model.Student?.StudentNumber</td>
+                </tr>
+
+                <tr>
+                    <th>Module Code</th>
+                    <td>@Model.Module?.Code</td>
+                </tr>
+
+                <tr>
+                    <th>Module Name</th>
+                    <td>@Model.Module?.Name</td>
+                </tr>
+
+                <tr>
+                    <th>Semester</th>
+                    <td>@Model.Semester</td>
+                </tr>
+
+                <tr>
+                    <th>Registration Date</th>
+                    <td>@Model.RegisteredOn.ToString("dd MMMM yyyy")</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="card-footer">
+
+            <a asp-action="Edit"
+               asp-route-id="@Model.RegistrationId"
+               class="btn btn-warning">
+                Edit
+            </a>
+
+            <a asp-action="Delete"
+               asp-route-id="@Model.RegistrationId"
+               class="btn btn-danger">
+                Delete
+            </a>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+                Back to List
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

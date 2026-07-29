@@ -1,0 +1,73 @@
+@model SchoolSystem.Models.Mark
+
+@{
+    ViewData["Title"] = "Mark Details";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-info text-white">
+            <h3>Mark Details</h3>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table">
+
+                <tr>
+                    <th>Student</th>
+                    <td>@Model.Student?.StudentNumber</td>
+                </tr>
+
+                <tr>
+                    <th>Module</th>
+                    <td>@Model.Module?.Code</td>
+                </tr>
+
+                <tr>
+                    <th>Assessment Type</th>
+                    <td>@Model.AssessmentType</td>
+                </tr>
+
+                <tr>
+                    <th>Score</th>
+                    <td>@Model.Score %</td>
+                </tr>
+
+                <tr>
+                    <th>Date Recorded</th>
+                    <td>@Model.DateRecorded.ToString("dd MMM yyyy HH:mm")</td>
+                </tr>
+
+                @if (Model.LastEditedOn != null)
+                {
+                    <tr>
+                        <th>Last Edited</th>
+                        <td>@Model.LastEditedOn</td>
+                    </tr>
+                }
+
+            </table>
+
+        </div>
+
+        <div class="card-footer">
+
+            <a asp-action="Edit"
+               asp-route-id="@Model.MarkId"
+               class="btn btn-warning">
+                Edit
+            </a>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+                Back
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

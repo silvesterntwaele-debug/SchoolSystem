@@ -1,0 +1,64 @@
+@model SchoolSystem.Models.Lecturer
+
+@{
+    ViewData["Title"] = "Lecturer Details";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-info text-white">
+            <h3>Lecturer Details</h3>
+        </div>
+
+        <div class="card-body">
+
+            <dl class="row">
+
+                <dt class="col-sm-3">
+                    Email
+                </dt>
+
+                <dd class="col-sm-9">
+                    @(Model.User?.Email ?? "No User Assigned")
+                </dd>
+
+                <dt class="col-sm-3">
+                    Staff Number
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.StaffNumber
+                </dd>
+
+                <dt class="col-sm-3">
+                    Department
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.Department
+                </dd>
+
+            </dl>
+
+        </div>
+
+        <div class="card-footer">
+
+            <a asp-action="Edit"
+               asp-route-id="@Model.LecturerId"
+               class="btn btn-warning">
+                ✏ Edit
+            </a>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+                ← Back to List
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

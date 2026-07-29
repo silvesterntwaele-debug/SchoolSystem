@@ -1,0 +1,90 @@
+@model IEnumerable<SchoolSystem.Models.Mark>
+
+@{
+    ViewData["Title"] = "Marks";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2>Marks</h2>
+            <p class="text-muted">Manage student assessment marks.</p>
+        </div>
+
+        <a asp-action="Create" class="btn btn-primary">
+            Create Mark
+        </a>
+    </div>
+
+    <div class="card shadow">
+
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Mark List</h5>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-hover table-striped">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>Student</th>
+                        <th>Module</th>
+                        <th>Assessment</th>
+                        <th>Score (%)</th>
+                        <th>Date Recorded</th>
+                        <th width="250">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <td>@item.Student?.StudentNumber</td>
+
+                            <td>@item.Module?.Code</td>
+
+                            <td>@item.AssessmentType</td>
+
+                            <td>@item.Score</td>
+
+                            <td>@item.DateRecorded.ToShortDateString()</td>
+
+                            <td>
+
+                                <a asp-action="Details"
+                                   asp-route-id="@item.MarkId"
+                                   class="btn btn-info btn-sm">
+                                    Details
+                                </a>
+
+                                <a asp-action="Edit"
+                                   asp-route-id="@item.MarkId"
+                                   class="btn btn-warning btn-sm">
+                                    Edit
+                                </a>
+
+                                <a asp-action="Delete"
+                                   asp-route-id="@item.MarkId"
+                                   class="btn btn-danger btn-sm">
+                                    Delete
+                                </a>
+
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

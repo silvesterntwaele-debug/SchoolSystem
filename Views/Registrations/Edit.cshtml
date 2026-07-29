@@ -1,0 +1,77 @@
+@model SchoolSystem.Models.Registration
+
+@{
+    ViewData["Title"] = "Edit Registration";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-warning text-dark">
+            <h3>Edit Registration</h3>
+        </div>
+
+        <div class="card-body">
+
+            <form asp-action="Edit">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <input type="hidden" asp-for="RegistrationId" />
+
+                <div class="mb-3">
+                    <label asp-for="StudentId" class="form-label"></label>
+                    <select asp-for="StudentId"
+                            class="form-select"
+                            asp-items="ViewBag.StudentId">
+                    </select>
+                    <span asp-validation-for="StudentId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ModuleId" class="form-label"></label>
+                    <select asp-for="ModuleId"
+                            class="form-select"
+                            asp-items="ViewBag.ModuleId">
+                    </select>
+                    <span asp-validation-for="ModuleId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Semester" class="form-label"></label>
+                    <input asp-for="Semester" class="form-control" />
+                    <span asp-validation-for="Semester" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="RegisteredOn" class="form-label"></label>
+                    <input asp-for="RegisteredOn"
+                           class="form-control"
+                           readonly />
+                </div>
+
+                <hr />
+
+                <button type="submit" class="btn btn-warning">
+                    Save Changes
+                </button>
+
+                <a asp-action="Index"
+                   class="btn btn-secondary">
+                    Back to List
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

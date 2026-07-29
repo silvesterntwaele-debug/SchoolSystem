@@ -1,0 +1,176 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container-fluid mt-4">
+
+    <div class="row">
+
+        <!-- LEFT SIDEBAR -->
+        <div class="col-lg-3 col-md-4 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-dark text-white">
+                    <h5 class="mb-0">Administration</h5>
+                </div>
+
+                <div class="list-group list-group-flush">
+
+                    <a asp-controller="Users"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        👥 User Management
+                    </a>
+
+                    <a asp-controller="Students"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        👨‍🎓 Students
+                    </a>
+
+                    <a asp-controller="Lecturers"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        👩‍🏫 Lecturers
+                    </a>
+
+                    <a asp-controller="Modules"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        📚 Modules
+                    </a>
+
+                    <a asp-controller="Registrations"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        📝 Registrations
+                    </a>
+
+                    <a asp-controller="StudentModuleMarkSheets"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        📊 Mark Sheets
+                    </a>
+
+                    <a asp-controller="ExamTimetables"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        📅 Exam Timetable
+                    </a>
+
+                    <a asp-controller="Invoices"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        💵 Invoices
+                    </a>
+
+                    <a asp-controller="Payments"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        💳 Payments
+                    </a>
+
+                    <a asp-controller="Audit"
+                       asp-action="AuditIndex"
+                       class="list-group-item list-group-item-action">
+                        📜 Audit Logs
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="col-lg-9 col-md-8">
+
+            <div class="mb-4">
+                <h2>School Management System</h2>
+                <h5 class="text-muted">Administrator Dashboard</h5>
+                <hr />
+            </div>
+
+            <!-- Statistics -->
+            <div class="row">
+
+                <div class="col-md-6 col-xl-3 mb-3">
+                    <div class="card border-primary shadow">
+                        <div class="card-body text-center">
+                            <h5>Total Students</h5>
+                            <h2>@ViewBag.StudentCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3 mb-3">
+                    <div class="card border-success shadow">
+                        <div class="card-body text-center">
+                            <h5>Total Lecturers</h5>
+                            <h2>@ViewBag.LecturerCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3 mb-3">
+                    <div class="card border-info shadow">
+                        <div class="card-body text-center">
+                            <h5>Total Modules</h5>
+                            <h2>@ViewBag.ModuleCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3 mb-3">
+                    <div class="card border-warning shadow">
+                        <div class="card-body text-center">
+                            <h5>Registrations</h5>
+                            <h2>@ViewBag.RegistrationCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3 mb-3">
+                    <div class="card border-secondary shadow">
+                        <div class="card-body text-center">
+                            <h5>Mark Sheets</h5>
+                            <h2>@ViewBag.StudentModuleMarkSheetCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3 mb-3">
+                    <div class="card border-danger shadow">
+                        <div class="card-body text-center">
+                            <h5>Exam Timetables</h5>
+                            <h2>@ViewBag.ExamCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3 mb-3">
+                    <div class="card border-dark shadow">
+                        <div class="card-body text-center">
+                            <h5>Invoices</h5>
+                            <h2>@ViewBag.InvoiceCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3 mb-3">
+                    <div class="card border-success shadow">
+                        <div class="card-body text-center">
+                            <h5>Payments</h5>
+                            <h2>@ViewBag.PaymentCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

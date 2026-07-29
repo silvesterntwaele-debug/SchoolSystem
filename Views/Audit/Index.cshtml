@@ -1,0 +1,76 @@
+﻿@model IEnumerable<SchoolSystem.Models.Audit>
+
+@{
+    ViewData["Title"] = "Audit Logs";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2>System Audit Logs</h2>
+            <p class="text-muted">
+                View all activities performed within the School Management System.
+            </p>
+        </div>
+    </div>
+
+    <div class="card shadow">
+
+        <div class="card-header bg-dark text-white">
+            <h5 class="mb-0">Audit History</h5>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-striped table-hover align-middle">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>Action</th>
+                        <th>Entity</th>
+                        <th>Entity ID</th>
+                        <th>Performed By</th>
+                        <th>Date & Time</th>
+                        <th width="120">Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <td>@item.Action</td>
+
+                            <td>@item.EntityName</td>
+
+                            <td>@item.EntityId</td>
+
+                            <td>@item.PerformedByUserId</td>
+
+                            <td>@item.Timestamp.ToLocalTime()</td>
+
+                            <td>
+
+                                <a asp-action="Details"
+                                   asp-route-id="@item.AuditId"
+                                   class="btn btn-info btn-sm">
+                                    Details
+                                </a>
+
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

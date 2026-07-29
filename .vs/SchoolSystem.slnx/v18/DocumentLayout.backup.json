@@ -1,0 +1,2111 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\examtimetables\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\examtimetables\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\lecturers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\lecturers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\studentmodulemarksheets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\studentmodulemarksheets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\registrations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\registrations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\modules\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\modules\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\marks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\marks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\invoices\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\invoices\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\invoices\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\invoices\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\viewmodel\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:viewmodel\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\registrations\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\registrations\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\registrations\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\registrations\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\models\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:models\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\viewmodel\\registrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:viewmodel\\registrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\payments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\payments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\payments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\payments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\payments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\payments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\models\\studentmodulemarksheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:models\\studentmodulemarksheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\studentmodulemarksheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\studentmodulemarksheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\lectrurerdashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\lectrurerdashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\lecturer\\lecturerdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\lecturer\\lecturerdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\studentdashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\studentdashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\student\\studentdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\student\\studentdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\studentmodulemarksheets\\deletecshtml.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\studentmodulemarksheets\\deletecshtml.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\studentmodulemarksheets\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\studentmodulemarksheets\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\studentmodulemarksheets\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\studentmodulemarksheets\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\studentmodulemarksheets\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\studentmodulemarksheets\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\markcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\markcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\examtimetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\examtimetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\marks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\marks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\auditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\auditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\audit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\audit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\audit\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\audit\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\registrations\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\registrations\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\registrations\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\registrations\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\payments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\payments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\modules\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\modules\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\modules\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\modules\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\modules\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\modules\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\modules\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\modules\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\marks\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\marks\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\marks\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\marks\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\marks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\marks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\invoices\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\invoices\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\invoices\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\invoices\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\invoices\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\invoices\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\examtimetables\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\examtimetables\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\examtimetables\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\examtimetables\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\examtimetables\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\examtimetables\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\examtimetables\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\examtimetables\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\models\\examtimetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:models\\examtimetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\lockout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\lockout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\students\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\students\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\lecturers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\lecturers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\lecturers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\lecturers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\lecturers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\lecturers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\lecturercontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\lecturercontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\models\\lecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:models\\lecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\students\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\students\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\confirmemailchange.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\confirmemailchange.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\resendemailconfirmation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\resendemailconfirmation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\registerconfirmation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\registerconfirmation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\twofactorauthentication.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\twofactorauthentication.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\setpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\setpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\resetauthenticator.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\resetauthenticator.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\personaldata.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\personaldata.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\generaterecoverycodes.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\generaterecoverycodes.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\externallogins.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\externallogins.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\enableauthenticator.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\enableauthenticator.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\email.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\email.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\disable2fa.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\disable2fa.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\downloadpersonaldata.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\downloadpersonaldata.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\deletepersonaldata.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\deletepersonaldata.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\manage\\changepassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\changepassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\loginwith2fa.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\loginwith2fa.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\forgotpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\forgotpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\confirmemail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\confirmemail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\account\\loginwithrecoverycode.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\account\\loginwithrecoverycode.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\schoolsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:schoolsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\data\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:data\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\areas\\identity\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:areas\\identity\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\data\\migrations\\20260713123236_fat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:data\\migrations\\20260713123236_fat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\models\\mark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:models\\mark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\data\\migrations\\20260709174805_db.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:data\\migrations\\20260709174805_db.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\models\\audit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:models\\audit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\data\\migrations\\20260713103621_res.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:data\\migrations\\20260713103621_res.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\data\\migrations\\20260709174805_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:data\\migrations\\20260709174805_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|c:\\users\\admin\\source\\repos\\schoolsystem\\data\\migrations\\20260723201141_prof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC18192-5BFB-6216-B8F6-A04A18C15EFF}|SchoolSystem.csproj|solutionrelative:data\\migrations\\20260723201141_prof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\ExamTimetables\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\ExamTimetables\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\ExamTimetables\\Index.cshtml",
+              "RelativeToolTip": "Views\\ExamTimetables\\Index.cshtml",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAUwHwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:21:45.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Lecturers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lecturers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Lecturers\\Index.cshtml",
+              "RelativeToolTip": "Views\\Lecturers\\Index.cshtml",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAUwOQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T22:13:21.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Payments\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Payments\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Payments\\Index.cshtml",
+              "RelativeToolTip": "Views\\Payments\\Index.cshtml",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAQwJEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:25:54.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Modules\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Modules\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Modules\\Index.cshtml",
+              "RelativeToolTip": "Views\\Modules\\Index.cshtml",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAQwI0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:04:56.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAUwPUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-24T01:45:43.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Admin\\AdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\AdminDashboard.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Admin\\AdminDashboard.cshtml*",
+              "RelativeToolTip": "Views\\Admin\\AdminDashboard.cshtml*",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAQwK8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T21:14:48.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Registrations\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Registrations\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Registrations\\Index.cshtml",
+              "RelativeToolTip": "Views\\Registrations\\Index.cshtml",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAQwL4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:38:06.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAAAKMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T01:38:41.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Students\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Students\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Students\\Index.cshtml",
+              "RelativeToolTip": "Views\\Students\\Index.cshtml",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAQwKAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T21:48:56.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\StudentModuleMarkSheets\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\StudentModuleMarkSheets\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\StudentModuleMarkSheets\\Index.cshtml",
+              "RelativeToolTip": "Views\\StudentModuleMarkSheets\\Index.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAK0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T14:30:34.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Marks\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Marks\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Marks\\Index.cshtml",
+              "RelativeToolTip": "Views\\Marks\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:57:40.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Invoices\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Invoices\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Invoices\\Index.cshtml",
+              "RelativeToolTip": "Views\\Invoices\\Index.cshtml",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAQwJIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:43:07.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Invoices\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Invoices\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Invoices\\Create.cshtml",
+              "RelativeToolTip": "Views\\Invoices\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:43:45.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\ViewModel\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\UserViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\ViewModel\\UserViewModel.cs",
+              "RelativeToolTip": "ViewModel\\UserViewModel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwBcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-24T01:37:05.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Users\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Users\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Users\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-24T01:55:22.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Users\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Users\\Details.cshtml",
+              "RelativeToolTip": "Views\\Users\\Details.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwC8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-24T01:47:33.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Users\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Users\\Edit.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-24T01:52:41.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T13:48:17.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Module.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Module.cs",
+              "RelativeDocumentMoniker": "Models\\Module.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Module.cs",
+              "RelativeToolTip": "Models\\Module.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T21:42:22.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Registrations\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Registrations\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Registrations\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Registrations\\Delete.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAUwEsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:44:56.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RegistrationController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\RegistrationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RegistrationController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\RegistrationController.cs",
+              "RelativeToolTip": "Controllers\\RegistrationController.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAUwMsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T21:54:49.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T10:16:11.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Registrations\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Registrations\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Registrations\\Create.cshtml",
+              "RelativeToolTip": "Views\\Registrations\\Create.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:40:27.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T21:40:06.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RegistrationViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\ViewModel\\RegistrationViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\RegistrationViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\ViewModel\\RegistrationViewModel.cs",
+              "RelativeToolTip": "ViewModel\\RegistrationViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T22:33:26.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "InvoiceController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\InvoiceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InvoiceController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\InvoiceController.cs",
+              "RelativeToolTip": "Controllers\\InvoiceController.cs",
+              "ViewState": "AgIAABYBAAAAAAAAAAAAABYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T20:22:21.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Payments\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Payments\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Payments\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Payments\\Edit.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAUwEsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:27:43.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T13:51:01.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Payments\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Payments\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Payments\\Create.cshtml",
+              "RelativeToolTip": "Views\\Payments\\Create.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAUwEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:12:13.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 129,
+              "Title": "20260723201141_prof.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\Migrations\\20260723201141_prof.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20260723201141_prof.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\Migrations\\20260723201141_prof.cs",
+              "RelativeToolTip": "Data\\Migrations\\20260723201141_prof.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T20:11:44.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Payments\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Payments\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Payments\\Details.cshtml",
+              "RelativeToolTip": "Views\\Payments\\Details.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwD8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:28:21.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "StudentDashController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\StudentDashController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentDashController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\StudentDashController.cs",
+              "RelativeToolTip": "Controllers\\StudentDashController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAEBVwBUAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T18:12:16.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "StudentModuleMarkSheet.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\StudentModuleMarkSheet.cs",
+              "RelativeDocumentMoniker": "Models\\StudentModuleMarkSheet.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\StudentModuleMarkSheet.cs",
+              "RelativeToolTip": "Models\\StudentModuleMarkSheet.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvyMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T13:44:51.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAQwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T13:12:36.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAACQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-08T20:49:30.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T10:58:42.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "StudentModuleMarkSheet.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\StudentModuleMarkSheet.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentModuleMarkSheet.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\StudentModuleMarkSheet.cs",
+              "RelativeToolTip": "Controllers\\StudentModuleMarkSheet.cs",
+              "ViewState": "AgIAAMoAAAAAAAAAAIBZwNgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T14:26:30.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "LectrurerDashController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\LectrurerDashController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LectrurerDashController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\LectrurerDashController.cs",
+              "RelativeToolTip": "Controllers\\LectrurerDashController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBUAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T18:18:05.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LecturerDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Lecturer\\LecturerDashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lecturer\\LecturerDashboard.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Lecturer\\LecturerDashboard.cshtml",
+              "RelativeToolTip": "Views\\Lecturer\\LecturerDashboard.cshtml",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAQwGcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T18:20:54.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "StudentDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Student\\StudentDashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\StudentDashboard.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Student\\StudentDashboard.cshtml",
+              "RelativeToolTip": "Views\\Student\\StudentDashboard.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAIBZwH0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T18:14:27.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Deletecshtml.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\StudentModuleMarkSheets\\Deletecshtml.cshtml",
+              "RelativeDocumentMoniker": "Views\\StudentModuleMarkSheets\\Deletecshtml.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\StudentModuleMarkSheets\\Deletecshtml.cshtml",
+              "RelativeToolTip": "Views\\StudentModuleMarkSheets\\Deletecshtml.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T14:36:32.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\StudentModuleMarkSheets\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\StudentModuleMarkSheets\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\StudentModuleMarkSheets\\Create.cshtml",
+              "RelativeToolTip": "Views\\StudentModuleMarkSheets\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T14:33:35.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\StudentModuleMarkSheets\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\StudentModuleMarkSheets\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\StudentModuleMarkSheets\\Edit.cshtml",
+              "RelativeToolTip": "Views\\StudentModuleMarkSheets\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T14:37:43.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\StudentModuleMarkSheets\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\StudentModuleMarkSheets\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\StudentModuleMarkSheets\\Details.cshtml",
+              "RelativeToolTip": "Views\\StudentModuleMarkSheets\\Details.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwE4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T14:31:58.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ExamTimetableController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\ExamTimetableController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExamTimetableController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\ExamTimetableController.cs",
+              "RelativeToolTip": "Controllers\\ExamTimetableController.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAQwN0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T19:32:04.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Marks\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Marks\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Marks\\Create.cshtml",
+              "RelativeToolTip": "Views\\Marks\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:58:21.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AuditController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\AuditController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuditController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\AuditController.cs",
+              "RelativeToolTip": "Controllers\\AuditController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T21:50:56.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T23:14:18.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "MarkController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\MarkController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MarkController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\MarkController.cs",
+              "RelativeToolTip": "Controllers\\MarkController.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAAwPIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T20:48:32.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAuwHQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T22:11:24.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAgAAAAAAAAAAIBZwDgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-21T23:16:55.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Audit\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Audit\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Audit\\Details.cshtml",
+              "RelativeToolTip": "Views\\Audit\\Details.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAUwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:54:38.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Audit\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Audit\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Audit\\Index.cshtml",
+              "RelativeToolTip": "Views\\Audit\\Index.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAUwEsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:49:42.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Registrations\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Registrations\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Registrations\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Registrations\\Edit.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAUwEwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:42:05.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Registrations\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Registrations\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Registrations\\Details.cshtml",
+              "RelativeToolTip": "Views\\Registrations\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:42:46.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Payments\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Payments\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Payments\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Payments\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:29:04.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Modules\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Modules\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Modules\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Modules\\Delete.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAUwEgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:08:19.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Modules\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Modules\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Modules\\Details.cshtml",
+              "RelativeToolTip": "Views\\Modules\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:07:39.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Modules\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Modules\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Modules\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Modules\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:06:56.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Modules\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Modules\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Modules\\Create.cshtml",
+              "RelativeToolTip": "Views\\Modules\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAACBjwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:05:49.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Marks\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Marks\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Marks\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Marks\\Delete.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAUwEEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T12:00:25.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Marks\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Marks\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Marks\\Details.cshtml",
+              "RelativeToolTip": "Views\\Marks\\Details.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAUwEgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:59:40.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Marks\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Marks\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Marks\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Marks\\Edit.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAUwEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:58:57.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Invoices\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Invoices\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Invoices\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Invoices\\Delete.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAACBjwEsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:46:38.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ModuleController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\ModuleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ModuleController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\ModuleController.cs",
+              "RelativeToolTip": "Controllers\\ModuleController.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAuwJsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T21:26:57.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Invoices\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Invoices\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Invoices\\Details.cshtml",
+              "RelativeToolTip": "Views\\Invoices\\Details.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAUwEoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:45:41.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Invoices\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Invoices\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Invoices\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Invoices\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:44:56.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\ExamTimetables\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\ExamTimetables\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\ExamTimetables\\Delete.cshtml",
+              "RelativeToolTip": "Views\\ExamTimetables\\Delete.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAUwDcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:26:41.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\ExamTimetables\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\ExamTimetables\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\ExamTimetables\\Details.cshtml",
+              "RelativeToolTip": "Views\\ExamTimetables\\Details.cshtml",
+              "ViewState": "AgIAADcAAAAAAAAAACBjwEAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:25:41.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\ExamTimetables\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\ExamTimetables\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\ExamTimetables\\Edit.cshtml",
+              "RelativeToolTip": "Views\\ExamTimetables\\Edit.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAUwEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:24:55.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\ExamTimetables\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\ExamTimetables\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\ExamTimetables\\Create.cshtml",
+              "RelativeToolTip": "Views\\ExamTimetables\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAABRwEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T11:23:49.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Lockout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T00:05:43.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAMBdwAQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-20T11:40:41.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Lecturers\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lecturers\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Lecturers\\Details.cshtml",
+              "RelativeToolTip": "Views\\Lecturers\\Details.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAUwD8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T22:27:37.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "ExamTimetable.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\ExamTimetable.cs",
+              "RelativeDocumentMoniker": "Models\\ExamTimetable.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\ExamTimetable.cs",
+              "RelativeToolTip": "Models\\ExamTimetable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T22:36:57.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Lecturers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lecturers\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Lecturers\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Lecturers\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T22:31:00.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Students\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Students\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Students\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Students\\Edit.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAUwEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T22:44:35.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "Lecturer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Lecturer.cs",
+              "RelativeDocumentMoniker": "Models\\Lecturer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Lecturer.cs",
+              "RelativeToolTip": "Models\\Lecturer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T21:26:11.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAuwKcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T18:02:35.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Students\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Students\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Students\\Details.cshtml",
+              "RelativeToolTip": "Views\\Students\\Details.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAACBjwEQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-09T18:42:14.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "LecturerController1.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\LecturerController1.cs",
+              "RelativeDocumentMoniker": "Controllers\\LecturerController1.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\LecturerController1.cs",
+              "RelativeToolTip": "Controllers\\LecturerController1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T19:12:28.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Lecturers\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lecturers\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Lecturers\\Create.cshtml",
+              "RelativeToolTip": "Views\\Lecturers\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAABRwEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T18:49:21.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-20T13:50:15.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Students\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Students\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Students\\Create.cshtml",
+              "RelativeToolTip": "Views\\Students\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T19:18:40.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Students\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Students\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Students\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Students\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T21:39:56.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAMBdwFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T19:09:02.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\ViewModel\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\ViewModel\\RegisterViewModel.cs",
+              "RelativeToolTip": "ViewModel\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T19:00:20.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAACBjwIwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T13:45:47.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T17:24:39.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T17:04:47.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "_ManageNav.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T16:42:29.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "ConfirmEmailChange.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAlwBAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:42:23.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "ResetPassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAlwBQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:51.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "ResendEmailConfirmation.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAlwBUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:47.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "RegisterConfirmation.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAlwBYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:44.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAlwBkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:41.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "TwoFactorAuthentication.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAlwBQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:37.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "SetPassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAlwBAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:34.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "ResetAuthenticator.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAlwBQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:31.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "PersonalData.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAlwBIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:28.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAlwBUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:25.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "GenerateRecoveryCodes.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAlwBQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:22.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "ExternalLogins.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAlwBMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:18.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "EnableAuthenticator.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAlwBsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:14.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "Email.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAlwBgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:10.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "Disable2fa.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAlwBMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:07.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "DownloadPersonalData.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAlwBMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:41:03.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAlwBMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:40:59.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "DeletePersonalData.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAlwBAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:40:56.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "ChangePassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:40:48.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 109,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAlwBkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:40:43.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 110,
+              "Title": "LoginWith2fa.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAlwBIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:40:08.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 111,
+              "Title": "ForgotPassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "ViewState": "AgIAADcAAAAAAAAAACBjwBcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:39:56.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 112,
+              "Title": "ExternalLogin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T16:34:07.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 113,
+              "Title": "ConfirmEmail.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-21T15:57:29.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 114,
+              "Title": "LoginWithRecoveryCode.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAACBjwBcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T15:00:37.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 115,
+              "Title": "SchoolSystem.csproj",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\SchoolSystem.csproj",
+              "RelativeDocumentMoniker": "SchoolSystem.csproj",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\SchoolSystem.csproj",
+              "RelativeToolTip": "SchoolSystem.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-20T13:39:15.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 116,
+              "Title": "IdentitySeeder.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\IdentitySeeder.cs",
+              "RelativeDocumentMoniker": "Data\\IdentitySeeder.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\IdentitySeeder.cs",
+              "RelativeToolTip": "Data\\IdentitySeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAABRwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T11:12:17.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 117,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T13:41:34.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 118,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-20T13:34:20.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 119,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Areas\\Identity\\Pages\\Error.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-20T12:50:45.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 120,
+              "Title": "20260713123236_fat.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\Migrations\\20260713123236_fat.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20260713123236_fat.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\Migrations\\20260713123236_fat.cs",
+              "RelativeToolTip": "Data\\Migrations\\20260713123236_fat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T12:32:37.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 127,
+              "Title": "20260713103621_res.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\Migrations\\20260713103621_res.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20260713103621_res.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\Migrations\\20260713103621_res.cs",
+              "RelativeToolTip": "Data\\Migrations\\20260713103621_res.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T10:36:22.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 121,
+              "Title": "Registration.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Registration.cs",
+              "RelativeDocumentMoniker": "Models\\Registration.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Registration.cs",
+              "RelativeToolTip": "Models\\Registration.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T22:18:39.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 122,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T22:56:53.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 123,
+              "Title": "Mark.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Mark.cs",
+              "RelativeDocumentMoniker": "Models\\Mark.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Mark.cs",
+              "RelativeToolTip": "Models\\Mark.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAmwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T22:28:45.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 128,
+              "Title": "20260709174805_db.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\Migrations\\20260709174805_db.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20260709174805_db.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\Migrations\\20260709174805_db.cs",
+              "RelativeToolTip": "Data\\Migrations\\20260709174805_db.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T17:48:07.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 124,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Invoice.cs",
+              "RelativeDocumentMoniker": "Models\\Invoice.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Invoice.cs",
+              "RelativeToolTip": "Models\\Invoice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAABBwAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T22:42:14.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 125,
+              "Title": "20260709174805_db.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\Migrations\\20260709174805_db.Designer.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20260709174805_db.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Data\\Migrations\\20260709174805_db.Designer.cs",
+              "RelativeToolTip": "Data\\Migrations\\20260709174805_db.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAlwA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T18:43:17.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 126,
+              "Title": "Audit.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Audit.cs",
+              "RelativeDocumentMoniker": "Models\\Audit.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SchoolSystem\\Models\\Audit.cs",
+              "RelativeToolTip": "Models\\Audit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T23:00:06.793Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

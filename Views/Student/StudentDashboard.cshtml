@@ -1,0 +1,127 @@
+﻿@{
+    ViewData["Title"] = "Student Dashboard";
+}
+
+<div class="container-fluid mt-4">
+
+    <div class="row">
+
+        <!-- LEFT SIDEBAR -->
+        <div class="col-lg-3 col-md-4 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Student Portal</h5>
+                </div>
+
+                <div class="list-group list-group-flush">
+
+                    <a asp-controller="Registrations"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        📝 My Registrations
+                    </a>
+
+                    <a asp-controller="StudentModuleMarkSheets"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        📊 My Module Mark Sheets
+                    </a>
+
+                    <a asp-controller="ExamTimetables"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        📅 Exam Timetable
+                    </a>
+
+                    <a asp-controller="Invoices"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        💵 My Invoices
+                    </a>
+
+                    <a asp-controller="Payments"
+                       asp-action="Index"
+                       class="list-group-item list-group-item-action">
+                        💳 My Payments
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="col-lg-9 col-md-8">
+
+            <div class="mb-4">
+                <h2>School Management System</h2>
+                <h5 class="text-muted">Student Dashboard</h5>
+                <hr />
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 col-xl-4 mb-3">
+                    <div class="card border-primary shadow">
+                        <div class="card-body text-center">
+                            <h5>Registered Modules</h5>
+                            <h2>@ViewBag.ModuleCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4 mb-3">
+                    <div class="card border-success shadow">
+                        <div class="card-body text-center">
+                            <h5>Registrations</h5>
+                            <h2>@ViewBag.RegistrationCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4 mb-3">
+                    <div class="card border-warning shadow">
+                        <div class="card-body text-center">
+                            <h5>Module Mark Sheets</h5>
+                            <h2>@ViewBag.StudentModuleMarkSheetCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4 mb-3">
+                    <div class="card border-info shadow">
+                        <div class="card-body text-center">
+                            <h5>Invoices</h5>
+                            <h2>@ViewBag.InvoiceCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4 mb-3">
+                    <div class="card border-dark shadow">
+                        <div class="card-body text-center">
+                            <h5>Payments</h5>
+                            <h2>@ViewBag.PaymentCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4 mb-3">
+                    <div class="card border-danger shadow">
+                        <div class="card-body text-center">
+                            <h5>Exam Timetables</h5>
+                            <h2>@ViewBag.ExamCount</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

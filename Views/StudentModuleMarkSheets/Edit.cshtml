@@ -1,0 +1,127 @@
+﻿@model SchoolSystem.Models.StudentModuleMarkSheet
+
+@{
+    ViewData["Title"] = "Edit Student Mark Sheet";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow-lg">
+
+        <div class="card-header bg-primary text-white">
+            <h3>Edit Student Module Mark Sheet</h3>
+        </div>
+
+        <div class="card-body">
+
+            <form asp-action="Edit">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <input type="hidden" asp-for="StudentModuleMarkSheetId" />
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="StudentId" class="form-label"></label>
+                        <select asp-for="StudentId"
+                                asp-items="ViewBag.StudentId"
+                                class="form-select">
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="ModuleId" class="form-label"></label>
+                        <select asp-for="ModuleId"
+                                asp-items="ViewBag.ModuleId"
+                                class="form-select">
+                        </select>
+                    </div>
+
+                    <hr />
+
+                    <div class="col-md-4 mb-3">
+                        <label asp-for="Test1" class="form-label"></label>
+                        <input asp-for="Test1" class="form-control" />
+                        <span asp-validation-for="Test1" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label asp-for="Test2" class="form-label"></label>
+                        <input asp-for="Test2" class="form-control" />
+                        <span asp-validation-for="Test2" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label asp-for="Test3" class="form-label"></label>
+                        <input asp-for="Test3" class="form-control" />
+                        <span asp-validation-for="Test3" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Assignment1" class="form-label"></label>
+                        <input asp-for="Assignment1" class="form-control" />
+                        <span asp-validation-for="Assignment1" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Assignment2" class="form-label"></label>
+                        <input asp-for="Assignment2" class="form-control" />
+                        <span asp-validation-for="Assignment2" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Practical" class="form-label"></label>
+                        <input asp-for="Practical" class="form-control" />
+                        <span asp-validation-for="Practical" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Project" class="form-label"></label>
+                        <input asp-for="Project" class="form-control" />
+                        <span asp-validation-for="Project" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="Exam" class="form-label"></label>
+                        <input asp-for="Exam" class="form-control" />
+                        <span asp-validation-for="Exam" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <label class="form-label fw-bold">
+                            Final Mark
+                        </label>
+
+                        <input asp-for="FinalMark"
+                               class="form-control bg-light"
+                               readonly />
+                    </div>
+
+                </div>
+
+                <hr />
+
+                <button type="submit" class="btn btn-warning">
+                    Save Changes
+                </button>
+
+                <a asp-action="Index"
+                   class="btn btn-secondary">
+                    Back to List
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

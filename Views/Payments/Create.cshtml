@@ -1,0 +1,73 @@
+@model SchoolSystem.Models.Payment
+
+@{
+    ViewData["Title"] = "Record Payment";
+}
+
+<h2>Record Payment</h2>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+
+        <form asp-action="Create" method="post">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Student Selection -->
+            <div class="mb-3">
+                <label class="form-label">Student Number</label>
+
+                <select name="StudentId"
+                        class="form-select"
+                        asp-items="ViewBag.StudentId">
+
+                    <option value="">-- Select Student --</option>
+
+                </select>
+            </div>
+
+            <!-- Payment Amount -->
+            <div class="mb-3">
+                <label asp-for="Amount" class="form-label"></label>
+
+                <input asp-for="Amount"
+                       class="form-control" />
+
+                <span asp-validation-for="Amount"
+                      class="text-danger"></span>
+            </div>
+
+            <!-- Reference -->
+            <div class="mb-3">
+                <label asp-for="Reference" class="form-label"></label>
+
+                <input asp-for="Reference"
+                       class="form-control" />
+
+                <span asp-validation-for="Reference"
+                      class="text-danger"></span>
+            </div>
+
+            <div class="mt-4">
+                <button type="submit" class="btn btn-success">
+                    Save Payment
+                </button>
+
+                <a asp-action="Index"
+                   class="btn btn-secondary">
+                    Cancel
+                </a>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

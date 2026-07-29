@@ -1,0 +1,75 @@
+﻿@model SchoolSystem.ViewModels.UserViewModel
+
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<div class="container mt-4">
+
+    <h2>Edit User</h2>
+
+    <hr />
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <form asp-action="Edit">
+
+                <input asp-for="Id" type="hidden" />
+
+                <div asp-validation-summary="ModelOnly"
+                     class="text-danger">
+                </div>
+
+                <div class="mb-3">
+
+                    <label asp-for="UserName"></label>
+
+                    <input asp-for="UserName"
+                           class="form-control" />
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label asp-for="Email"></label>
+
+                    <input asp-for="Email"
+                           class="form-control" />
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label>Role</label>
+
+                    <select asp-for="Role"
+                            class="form-control"
+                            asp-items="@(new SelectList(ViewBag.Roles))">
+                    </select>
+
+                </div>
+
+                <button class="btn btn-success">
+                    Save Changes
+                </button>
+
+                <a asp-action="Index"
+                   class="btn btn-secondary">
+                    Cancel
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

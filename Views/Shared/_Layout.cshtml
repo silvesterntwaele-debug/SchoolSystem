@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - School Management System</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SchoolSystem.styles.css" asp-append-version="true" />
+</head>
+
+@{
+    bool isHome =
+        ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" &&
+        ViewContext.RouteData.Values["Action"]?.ToString() == "Index";
+}
+
+<body>
+
+    <!-- ========================= -->
+    <!-- NAVIGATION BAR -->
+    <!-- ========================= -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg @(isHome ? "navbar-dark bg-transparent position-absolute top-0 start-0 w-100" : "navbar-dark bg-primary shadow")"
+             style="z-index:1000;">
+
+            <div class="container-fluid px-4">
+
+                <!-- SYSTEM NAME -->
+
+                <a class="navbar-brand fw-bold fs-4"
+                   asp-controller="Home"
+                   asp-action="Index">
+                    🎓 School Management System
+                </a>
+
+                <div class="ms-auto">
+
+                    @if (User.Identity != null && User.Identity.IsAuthenticated)
+                    {
+                        <form asp-area="Identity"
+                              asp-page="/Account/Logout"
+                              method="post"
+                              class="d-inline">
+
+                            <button type="submit"
+                                    class="btn btn-outline-light">
+                                Logout
+                            </button>
+
+                        </form>
+                    }
+                    else
+                    {
+                        <a asp-area="Identity"
+                           asp-page="/Account/Login"
+                           class="btn btn-warning fw-bold">
+                            Login
+                        </a>
+                    }
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- PAGE CONTENT -->
+    <!-- ========================= -->
+    @if (isHome)
+    {
+        @RenderBody()
+    }
+    else
+    {
+        <div class="container-fluid px-4 py-4">
+
+            <main role="main">
+
+                @RenderBody()
+
+            </main>
+
+        </div>
+    }
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer class="text-center text-white py-3 mt-4">
+
+        <small>
+
+            © @DateTime.Now.Year School Management System |
+            Developed for Mavester College
+
+        </small>
+
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

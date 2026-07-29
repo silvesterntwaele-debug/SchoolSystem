@@ -1,0 +1,65 @@
+@model SchoolSystem.Models.ExamTimetable
+
+@{
+    ViewData["Title"] = "Exam Timetable Details";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-info text-white">
+            <h3>Exam Timetable Details</h3>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table">
+
+                <tr>
+                    <th>Module</th>
+                    <td>@Model.Module?.Code</td>
+                </tr>
+
+                <tr>
+                    <th>Exam Date</th>
+                    <td>@Model.ExamDate.ToLongDateString()</td>
+                </tr>
+
+                <tr>
+                    <th>Start Time</th>
+                    <td>@Model.StartTime</td>
+                </tr>
+
+                <tr>
+                    <th>Duration</th>
+                    <td>@Model.DurationMinutes Minutes</td>
+                </tr>
+
+                <tr>
+                    <th>Venue</th>
+                    <td>@Model.Venue</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="card-footer">
+
+            <a asp-action="Edit"
+               asp-route-id="@Model.ExamTimetableId"
+               class="btn btn-warning">
+                Edit
+            </a>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+                Back
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

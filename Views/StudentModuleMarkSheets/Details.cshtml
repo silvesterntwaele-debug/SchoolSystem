@@ -1,0 +1,79 @@
+﻿@model StudentModuleMarkSheet
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-primary text-white">
+
+            <h3>Student Mark Sheet</h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-bordered">
+
+                <tr><th>Student</th><td>@Model.Student?.StudentNumber</td></tr>
+
+                <tr><th>Module</th><td>@Model.Module?.Code</td></tr>
+
+                <tr><th>Test 1</th><td>@Model.Test1</td></tr>
+
+                <tr><th>Test 2</th><td>@Model.Test2</td></tr>
+
+                <tr><th>Test 3</th><td>@Model.Test3</td></tr>
+
+                <tr><th>Assignment 1</th><td>@Model.Assignment1</td></tr>
+
+                <tr><th>Assignment 2</th><td>@Model.Assignment2</td></tr>
+
+                <tr><th>Practical</th><td>@Model.Practical</td></tr>
+
+                <tr><th>Project</th><td>@Model.Project</td></tr>
+
+                <tr><th>Exam</th><td>@Model.Exam</td></tr>
+
+                <tr class="table-success">
+
+                    <th>Final Mark</th>
+
+                    <td>@Model.FinalMark %</td>
+
+                </tr>
+
+                <tr>
+
+                    <th>Result</th>
+
+                    <td>
+
+                        @if (Model.FinalMark >= 50)
+                        {
+                            <span class="badge bg-success">PASS</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">FAIL</span>
+                        }
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+                Back
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

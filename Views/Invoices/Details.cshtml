@@ -1,0 +1,75 @@
+@model SchoolSystem.Models.Invoice
+
+@{
+    ViewData["Title"] = "Invoice Details";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-info text-white">
+            <h3>Invoice Details</h3>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table">
+
+                <tr>
+                    <th>Student Number</th>
+                    <td>@Model.Student?.StudentNumber</td>
+                </tr>
+
+                <tr>
+                    <th>Description</th>
+                    <td>@Model.Description</td>
+                </tr>
+
+                <tr>
+                    <th>Amount Due</th>
+                    <td>R @Model.AmountDue.ToString("N2")</td>
+                </tr>
+
+                <tr>
+                    <th>Amount Paid</th>
+                    <td>R @Model.AmountPaid.ToString("N2")</td>
+                </tr>
+
+                <tr>
+                    <th>Balance</th>
+                    <td>R @Model.Balance.ToString("N2")</td>
+                </tr>
+
+                <tr>
+                    <th>Due Date</th>
+                    <td>@Model.DueDate.ToLongDateString()</td>
+                </tr>
+
+                <tr>
+                    <th>Created On</th>
+                    <td>@Model.CreatedOn.ToLongDateString()</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="card-footer">
+
+            <a asp-action="Edit"
+               asp-route-id="@Model.InvoiceId"
+               class="btn btn-warning">
+                Edit
+            </a>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+                Back
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

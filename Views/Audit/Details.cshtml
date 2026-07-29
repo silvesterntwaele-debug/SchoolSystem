@@ -1,0 +1,81 @@
+﻿@model SchoolSystem.Models.Audit
+
+@{
+    ViewData["Title"] = "Audit Details";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-dark text-white">
+            <h3>Audit Details</h3>
+        </div>
+
+        <div class="card-body">
+
+            <dl class="row">
+
+                <dt class="col-sm-3">
+                    Action
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.Action
+                </dd>
+
+                <dt class="col-sm-3">
+                    Entity
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.EntityName
+                </dd>
+
+                <dt class="col-sm-3">
+                    Entity ID
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.EntityId
+                </dd>
+
+                <dt class="col-sm-3">
+                    Performed By
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.PerformedByUserId
+                </dd>
+
+                <dt class="col-sm-3">
+                    Details
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.Details
+                </dd>
+
+                <dt class="col-sm-3">
+                    Date & Time
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.Timestamp.ToLocalTime()
+                </dd>
+
+            </dl>
+
+        </div>
+
+        <div class="card-footer">
+
+            <a asp-action="Index" class="btn btn-secondary">
+                Back to Audit Logs
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

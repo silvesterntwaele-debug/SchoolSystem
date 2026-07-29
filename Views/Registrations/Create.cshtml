@@ -1,0 +1,97 @@
+@model SchoolSystem.ViewModels.RegistrationViewModel
+
+@{
+    ViewData["Title"] = "Register Student";
+}
+
+<h2>Register Student</h2>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-8">
+
+        <form asp-action="Create">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="mb-3">
+
+                <label asp-for="StudentId" class="form-label"></label>
+
+                <select asp-for="StudentId"
+                        class="form-select"
+                        asp-items="ViewBag.StudentId">
+
+                    <option value="">-- Select Student --</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label asp-for="Semester" class="form-label"></label>
+
+                <input asp-for="Semester" class="form-control"/>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-header bg-primary text-white">
+
+                    <strong>Select Modules</strong>
+
+                </div>
+
+                <div class="card-body">
+
+                    @foreach (var module in Model.Modules)
+                    {
+                        <div class="form-check">
+
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   name="SelectedModules"
+                                   value="@module.ModuleId" />
+
+                            <label class="form-check-label">
+
+                                @module.Code - @module.Name
+
+                            </label>
+
+                        </div>
+                    }
+
+                </div>
+
+            </div>
+
+            <br />
+
+            <button type="submit"
+                    class="btn btn-success">
+
+                Register Student
+
+            </button>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+
+                Cancel
+
+            </a>
+
+        </form>
+
+    </div>
+</div>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

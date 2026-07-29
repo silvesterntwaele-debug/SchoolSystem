@@ -1,0 +1,78 @@
+@model SchoolSystem.Models.Module
+
+@{
+    ViewData["Title"] = "Module Details";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-info text-white">
+            <h3>Module Details</h3>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table">
+
+                <tr>
+                    <th>Module Code</th>
+                    <td>@Model.Code</td>
+                </tr>
+
+                <tr>
+                    <th>Module Name</th>
+                    <td>@Model.Name</td>
+                </tr>
+
+                <tr>
+                    <th>Credits</th>
+                    <td>@Model.Credits</td>
+                </tr>
+
+                <tr>
+                    <th>Capacity</th>
+                    <td>@Model.Capacity</td>
+                </tr>
+
+                <tr>
+                    <th>Lecturer</th>
+                    <td>@Model.Lecturer?.StaffNumber</td>
+                </tr>
+
+                @if (Model.ExamTimetable != null)
+                {
+                    <tr>
+                        <th>Exam Date</th>
+                        <td>@Model.ExamTimetable.ExamDate.ToShortDateString()</td>
+                    </tr>
+
+                    <tr>
+                        <th>Exam Venue</th>
+                        <td>@Model.ExamTimetable.Venue</td>
+                    </tr>
+                }
+
+            </table>
+
+        </div>
+
+        <div class="card-footer">
+
+            <a asp-action="Edit"
+               asp-route-id="@Model.ModuleId"
+               class="btn btn-warning">
+                Edit
+            </a>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+                Back
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

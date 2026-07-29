@@ -1,0 +1,229 @@
+@model IEnumerable<SchoolSystem.Models.Lecturer>
+
+@{
+    ViewData["Title"] = "Lecturers";
+}
+
+<div class="container mt-4">
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show">
+
+            @TempData["Success"]
+
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert">
+            </button>
+
+        </div>
+    }
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+
+            <h2 class="fw-bold">Lecturers</h2>
+
+            <p class="text-muted">
+
+                @if (User.IsInRole("Admin"))
+                {
+                    <text>Manage all lecturers registered in the system.</text>
+                }
+                else if (User.IsInRole("Lecturer"))
+                {
+                    <text>View lecturer information.</text>
+                }
+                else
+                {
+                    <text>View lecturer information.</text>
+                }
+
+            </p>
+
+        </div>
+
+        @if (User.IsInRole("Admin"))
+        {
+            <a asp-action="Create"
+               class="btn btn-success">
+                ➕ Create Lecturer
+            </a>
+        }
+
+    </div>
+
+    <div class="card shadow">
+
+        <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+
+            <h5 class="mb-0">Lecturer List</h5>
+
+            <span class="badge bg-light text-dark">
+                Total Lecturers: @Model.Count()
+            </span>
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="mb-3">
+
+                <input type="text"
+                       id="searchLecturer"
+                       class="form-control"
+                       placeholder="Search by email, staff number or department..." />
+
+            </div>
+
+            <div class="table-responsive">
+
+                <table class="table table-hover table-bordered align-middle"
+                       id="lecturerTable">
+
+                    <thead class="table-dark">
+
+                        <tr>
+
+                            <th>Email</th>
+
+                            <th>Staff Number</th>
+
+                            <th>Department</th>
+
+                            <th width="250" class="text-center">
+                                Actions
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        @if (Model.Any())
+                        {
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @(item.User?.Email ?? "No User Assigned")
+                                    </td>
+
+                                    <td>
+                                        @item.StaffNumber
+                                    </td>
+
+                                    <td>
+                                        @item.Department
+                                    </td>
+
+                                    <td class="text-center">
+
+                                        <a asp-action="Details"
+                                           asp-route-id="@item.LecturerId"
+                                           class="btn btn-info btn-sm">
+                                            Details
+                                        </a>
+
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <a asp-action="Edit"
+                                               asp-route-id="@item.LecturerId"
+                                               class="btn btn-warning btn-sm">
+                                                Edit
+                                            </a>
+
+                                            <a asp-action="Delete"
+                                               asp-route-id="@item.LecturerId"
+                                               class="btn btn-danger btn-sm">
+                                                Delete
+                                            </a>
+                                        }
+
+                                    </td>
+
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+
+                                <td colspan="4"
+                                    class="text-center text-muted py-4">
+                                    No lecturers have been registered yet.
+                                </td>
+
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr />
+
+    <div class="mt-3">
+
+        @if (User.IsInRole("Admin"))
+        {
+            <a asp-controller="Admin"
+               asp-action="AdminDashboard"
+               class="btn btn-secondary">
+                ← Back to Admin Dashboard
+            </a>
+        }
+        else if (User.IsInRole("Lecturer"))
+        {
+            <a asp-controller="Lecturer"
+               asp-action="LecturerDashboard"
+               class="btn btn-secondary">
+                ← Back to Lecturer Dashboard
+            </a>
+        }
+        else if (User.IsInRole("Student"))
+        {
+            <a asp-controller="Student"
+               asp-action="StudentDashboard"
+               class="btn btn-secondary">
+                ← Back to Student Dashboard
+            </a>
+        }
+
+    </div>
+
+</div>
+
+@section Scripts {
+
+    <script>
+
+        document.getElementById("searchLecturer").addEventListener("keyup", function() {
+
+            let filter = this.value.toLowerCase();
+
+            let rows = document.querySelectorAll("#lecturerTable tbody tr");
+
+            rows.forEach(function(row) {
+
+                let text = row.innerText.toLowerCase();
+
+                row.style.display = text.includes(filter) ? "" : "none";
+
+            });
+
+        });
+
+    </script>
+
+}

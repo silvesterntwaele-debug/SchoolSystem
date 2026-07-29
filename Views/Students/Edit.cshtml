@@ -1,0 +1,74 @@
+@model SchoolSystem.Models.Student
+
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-warning text-dark">
+            <h3>Edit Student</h3>
+        </div>
+
+        <div class="card-body">
+
+            <form asp-action="Edit">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <input type="hidden" asp-for="StudentId" />
+                <input type="hidden" asp-for="UserId" />
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input class="form-control"
+                           value="@(Model.User?.Email ?? "No User Assigned")"
+                           readonly />
+                </div>
+
+                <!-- Student Number -->
+                <div class="mb-3">
+                    <label asp-for="StudentNumber" class="form-label"></label>
+                    <input asp-for="StudentNumber" class="form-control" />
+                    <span asp-validation-for="StudentNumber" class="text-danger"></span>
+                </div>
+
+                <!-- Programme -->
+                <div class="mb-3">
+                    <label asp-for="Program" class="form-label"></label>
+                    <input asp-for="Program" class="form-control" />
+                    <span asp-validation-for="Program" class="text-danger"></span>
+                </div>
+
+                <!-- Year of Study -->
+                <div class="mb-3">
+                    <label asp-for="YearOfStudy" class="form-label"></label>
+                    <input asp-for="YearOfStudy" class="form-control" type="number" min="1" />
+                    <span asp-validation-for="YearOfStudy" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-warning">
+                    💾 Save Changes
+                </button>
+
+                <a asp-action="Index" class="btn btn-secondary">
+                    Cancel
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

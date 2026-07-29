@@ -1,0 +1,312 @@
+/*=========================================
+            GENERAL SETTINGS
+==========================================*/
+
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width:768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #0B2E59;
+    color: white;
+    font-family: 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+main {
+    min-height: calc(100vh - 130px);
+    padding: 30px;
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+
+/*=========================================
+            NAVBAR
+==========================================*/
+
+.navbar {
+    padding: 15px 30px;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.navbar .btn {
+    border-radius: 30px;
+    padding: 8px 24px;
+}
+
+
+/*=========================================
+            HOME PAGE
+==========================================*/
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background: #0B2E59;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(6,31,88,.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-logo {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.btn-login {
+    display: inline-block;
+    margin-top: 35px;
+    background: white;
+    color: #0B2E59;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+    .btn-login:hover {
+        background: #ffc107;
+        color: black;
+        transform: translateY(-4px);
+    }
+
+
+/*=========================================
+            CARDS
+==========================================*/
+
+.card {
+    background: #153b73;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.25);
+}
+
+.card-header {
+    background: #0A2A54;
+    color: white;
+    border-bottom: none;
+    font-weight: bold;
+}
+
+
+/*=========================================
+            TABLES
+==========================================*/
+
+.table {
+    color: white;
+    margin-bottom: 0;
+}
+
+    .table thead {
+        background: #09264A;
+    }
+
+.table-dark {
+    background: #09264A !important;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background: rgba(255,255,255,.04);
+}
+
+.table-hover tbody tr:hover {
+    background: rgba(255,255,255,.10);
+}
+
+.table td,
+.table th {
+    border-color: rgba(255,255,255,.12);
+    vertical-align: middle;
+}
+
+
+/*=========================================
+            FORMS
+==========================================*/
+
+.form-control,
+.form-select {
+    background: #1B4D91;
+    border: 1px solid #4876B5;
+    color: white;
+}
+
+    .form-control:focus,
+    .form-select:focus {
+        background: #245EA8;
+        color: white;
+        border-color: #8BB7FF;
+    }
+
+    .form-control::placeholder {
+        color: #dddddd;
+    }
+
+label {
+    color: white;
+    font-weight: 600;
+}
+
+.text-danger {
+    color: #ffb3b3 !important;
+}
+
+
+/*=========================================
+            BUTTONS
+==========================================*/
+
+.btn-primary {
+    background: #FFC107;
+    color: black;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background: #FFD54F;
+        color: black;
+    }
+
+.btn-warning {
+    color: black;
+}
+
+.btn-danger {
+    color: white;
+}
+
+.btn-info {
+    color: white;
+}
+
+.btn-success {
+    color: white;
+}
+
+
+/*=========================================
+            LINKS
+==========================================*/
+
+a {
+    color: #A9D4FF;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: white;
+    }
+
+
+/*=========================================
+            DESCRIPTION LISTS
+==========================================*/
+
+dt {
+    color: #FFC107;
+}
+
+dd {
+    color: white;
+}
+
+
+/*=========================================
+            FOOTER
+==========================================*/
+
+footer {
+    background: #09264A;
+    color: white;
+    text-align: center;
+}
+
+    footer a {
+        color: #FFC107;
+    }
+
+
+/*=========================================
+            RESPONSIVE
+==========================================*/
+
+@media(max-width:768px) {
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero-logo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
