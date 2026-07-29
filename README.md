@@ -185,7 +185,7 @@ Areas/
 
 ## 👨‍💻 Developer
 
-Developed by **Lerato**
+Developed by **Thato_Silvester**
 
 Built as a university project to demonstrate full-stack web development using **ASP.NET Core MVC** and **SQL Server**.
 
