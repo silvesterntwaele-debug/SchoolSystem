@@ -6,62 +6,128 @@
 
 <div class="container mt-4">
 
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+            <h2>Create Module</h2>
+            <p class="text-muted">
+                Add a new module to the School Management System.
+            </p>
+        </div>
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
+            ← Back to Module List
+        </a>
+
+    </div>
+
     <div class="card shadow">
 
         <div class="card-header bg-primary text-white">
-            <h3>Create Module</h3>
+            <h5 class="mb-0">
+                Module Information
+            </h5>
         </div>
 
         <div class="card-body">
 
             <form asp-action="Create">
 
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-                <div class="mb-3">
-                    <label asp-for="Code"></label>
-                    <input asp-for="Code" class="form-control" />
-                    <span asp-validation-for="Code" class="text-danger"></span>
+                <div asp-validation-summary="ModelOnly"
+                     class="text-danger mb-3">
                 </div>
 
                 <div class="mb-3">
-                    <label asp-for="Name"></label>
-                    <input asp-for="Name" class="form-control" />
-                    <span asp-validation-for="Name" class="text-danger"></span>
+
+                    <label asp-for="Code"
+                           class="form-label">
+                    </label>
+
+                    <input asp-for="Code"
+                           class="form-control" />
+
+                    <span asp-validation-for="Code"
+                          class="text-danger">
+                    </span>
+
                 </div>
 
                 <div class="mb-3">
-                    <label asp-for="Credits"></label>
-                    <input asp-for="Credits" class="form-control" />
-                    <span asp-validation-for="Credits" class="text-danger"></span>
+
+                    <label asp-for="Name"
+                           class="form-label">
+                    </label>
+
+                    <input asp-for="Name"
+                           class="form-control" />
+
+                    <span asp-validation-for="Name"
+                          class="text-danger">
+                    </span>
+
                 </div>
 
                 <div class="mb-3">
-                    <label asp-for="Capacity"></label>
-                    <input asp-for="Capacity" class="form-control" />
-                    <span asp-validation-for="Capacity" class="text-danger"></span>
+
+                    <label asp-for="Credits"
+                           class="form-label">
+                    </label>
+
+                    <input asp-for="Credits"
+                           class="form-control" />
+
+                    <span asp-validation-for="Credits"
+                          class="text-danger">
+                    </span>
+
                 </div>
 
                 <div class="mb-3">
-                    <label asp-for="LecturerId"></label>
+
+                    <label asp-for="Capacity"
+                           class="form-label">
+                    </label>
+
+                    <input asp-for="Capacity"
+                           class="form-control" />
+
+                    <span asp-validation-for="Capacity"
+                          class="text-danger">
+                    </span>
+
+                </div>
+
+                <div class="mb-4">
+
+                    <label asp-for="LecturerId"
+                           class="form-label">
+                        Lecturer
+                    </label>
+
                     <select asp-for="LecturerId"
-                            asp-items="ViewBag.LecturerId"
-                            class="form-select">
+                            class="form-select"
+                            asp-items="ViewBag.LecturerId">
 
-                        <option value="">-- Select Lecturer --</option>
+                        <option value="">
+                            -- Select Lecturer --
+                        </option>
 
                     </select>
 
-                    <span asp-validation-for="LecturerId" class="text-danger"></span>
+                    <span asp-validation-for="LecturerId"
+                          class="text-danger">
+                    </span>
 
                 </div>
 
-                <button class="btn btn-success">
-                    Save
+                <button type="submit"
+                        class="btn btn-primary">
+                    Save Module
                 </button>
 
                 <a asp-action="Index"
-                   class="btn btn-secondary">
+                   class="btn btn-outline-secondary">
                     Cancel
                 </a>
 
@@ -74,9 +140,7 @@
 </div>
 
 @section Scripts {
-
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-
 }

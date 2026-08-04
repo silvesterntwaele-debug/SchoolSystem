@@ -7,7 +7,7 @@ using SchoolSystem.Data;
 
 namespace SchoolSystem.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin,Lecturer")]
     public class LecturersController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -20,12 +20,38 @@ namespace SchoolSystem.Controllers
         // =========================
         // INDEX
         // =========================
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            var lecturers = _context.Lecturers
-                .Include(l => l.User);
+            ViewData["CurrentFilter"] = searchString;
 
-            return View(await lecturers.ToListAsync());
+            var lecturers = _context.Lecturers
+                .Include(l => l.User)
+                .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(searchString))
+            {
+                searchString = searchString.Trim();
+
+                lecturers = lecturers.Where(l =>
+
+                    (l.StaffNumber != null &&
+                     l.StaffNumber.Contains(searchString))
+
+                    ||
+
+                    (l.Department != null &&
+                     l.Department.Contains(searchString))
+
+                    ||
+
+                    (l.User != null &&
+                     l.User.Email.Contains(searchString))
+                );
+            }
+
+            return View(await lecturers
+                .OrderBy(l => l.StaffNumber)
+                .ToListAsync());
         }
 
         // =========================
@@ -45,64 +71,76 @@ namespace SchoolSystem.Controllers
 
             return View(lecturer);
         }
-		// =========================
-		// CREATE (GET)
-		// =========================
-		public IActionResult Create()
-		{
-			ViewBag.UserID = new SelectList(_context.Users, "Id", "Email");
-			return View();
-		}
 
-		// =========================
-		// CREATE (POST)
-		// =========================
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Create(Lecturer lecturer)
-		{
-			if (!ModelState.IsValid)
-			{
-				ViewBag.UserID = new SelectList(_context.Users, "Id", "Email", lecturer.UserID);
-				return View(lecturer);
-			}
+        // =========================
+        // CREATE (GET)
+        // =========================
+        [Authorize(Roles = "Admin")]
+        public IActionResult Create()
+        {
+            ViewBag.UserID = new SelectList(_context.Users, "Id", "Email");
+            return View();
+        }
 
-			try
-			{
-				_context.Lecturers.Add(lecturer);
-				await _context.SaveChangesAsync();
+        // =========================
+        // CREATE (POST)
+        // =========================
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Lecturer lecturer)
+        {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.UserID = new SelectList(
+                    _context.Users,
+                    "Id",
+                    "Email",
+                    lecturer.UserID);
 
-				_context.Audits.Add(new Audit
-				{
-					Action = "Lecturer Created",
-					EntityName = "Lecturer",
-					EntityId = lecturer.LecturerId,
-					PerformedByUserId = User.Identity?.Name ?? "System",
-					Details = $"Lecturer {lecturer.StaffNumber} was created.",
-					Timestamp = DateTime.UtcNow
-				});
+                return View(lecturer);
+            }
 
-				await _context.SaveChangesAsync();
+            try
+            {
+                _context.Lecturers.Add(lecturer);
+                await _context.SaveChangesAsync();
 
-				TempData["Success"] = "Lecturer created successfully.";
+                _context.Audits.Add(new Audit
+                {
+                    Action = "Lecturer Created",
+                    EntityName = "Lecturer",
+                    EntityId = lecturer.LecturerId,
+                    PerformedByUserId = User.Identity?.Name ?? "System",
+                    Details = $"Lecturer {lecturer.StaffNumber} was created.",
+                    Timestamp = DateTime.UtcNow
+                });
 
-				return RedirectToAction(nameof(Index));
-			}
-			catch (Exception ex)
-			{
-				ModelState.AddModelError("", ex.Message);
+                await _context.SaveChangesAsync();
 
-				ViewBag.UserID = new SelectList(_context.Users, "Id", "Email", lecturer.UserID);
+                TempData["Success"] = "Lecturer created successfully.";
 
-				return View(lecturer);
-			}
-		}
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", ex.Message);
 
+                ViewBag.UserID = new SelectList(
+                    _context.Users,
+                    "Id",
+                    "Email",
+                    lecturer.UserID);
 
-		// =========================
-		// EDIT
-		// =========================
-		public async Task<IActionResult> Edit(int? id)
+                return View(lecturer);
+            }
+        }
+
+        // =========================
+        // EDIT (GET)
+        // =========================
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
                 return NotFound();
@@ -112,11 +150,20 @@ namespace SchoolSystem.Controllers
             if (lecturer == null)
                 return NotFound();
 
-            ViewData["UserID"] = new SelectList(_context.Users, "Id", "Email", lecturer.UserID);
+            ViewData["UserID"] = new SelectList(
+                _context.Users,
+                "Id",
+                "Email",
+                lecturer.UserID);
 
             return View(lecturer);
+
         }
 
+        // =========================
+        // EDIT (POST)
+        // =========================
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Lecturer lecturer)
@@ -124,44 +171,51 @@ namespace SchoolSystem.Controllers
             if (id != lecturer.LecturerId)
                 return NotFound();
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                try
+                ViewData["UserID"] = new SelectList(
+                    _context.Users,
+                    "Id",
+                    "Email",
+                    lecturer.UserID);
+
+                return View(lecturer);
+            }
+
+            try
+            {
+                _context.Update(lecturer);
+                await _context.SaveChangesAsync();
+
+                _context.Audits.Add(new Audit
                 {
-                    _context.Update(lecturer);
-                    await _context.SaveChangesAsync();
+                    Action = "Lecturer Updated",
+                    EntityName = "Lecturer",
+                    EntityId = lecturer.LecturerId,
+                    PerformedByUserId = User.Identity?.Name ?? "System",
+                    Details = $"Lecturer {lecturer.StaffNumber} was updated.",
+                    Timestamp = DateTime.UtcNow
+                });
 
-                    _context.Audits.Add(new Audit
-                    {
-                        Action = "Lecturer Updated",
-                        EntityName = "Lecturer",
-                        EntityId = lecturer.LecturerId,
-                        PerformedByUserId = User.Identity?.Name ?? "System",
-                        Details = $"Lecturer {lecturer.StaffNumber} was updated.",
-                        Timestamp = DateTime.UtcNow
-                    });
+                await _context.SaveChangesAsync();
 
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!LecturerExists(lecturer.LecturerId))
-                        return NotFound();
-
-                    throw;
-                }
+                TempData["Success"] = "Lecturer updated successfully.";
 
                 return RedirectToAction(nameof(Index));
             }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!LecturerExists(lecturer.LecturerId))
+                    return NotFound();
 
-            ViewData["UserID"] = new SelectList(_context.Users, "Id", "Email", lecturer.UserID);
-
-            return View(lecturer);
+                throw;
+            }
         }
 
         // =========================
-        // DELETE
+        // DELETE (GET)
         // =========================
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -177,6 +231,10 @@ namespace SchoolSystem.Controllers
             return View(lecturer);
         }
 
+        // =========================
+        // DELETE (POST)
+        // =========================
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -199,6 +257,8 @@ namespace SchoolSystem.Controllers
 
                 await _context.SaveChangesAsync();
             }
+
+            TempData["Success"] = "Lecturer deleted successfully.";
 
             return RedirectToAction(nameof(Index));
         }

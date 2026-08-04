@@ -6,90 +6,17 @@
 
 <div class="container mt-4">
 
-    <div class="card shadow-lg border-0">
+    <!-- HEADER -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
 
-        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-
-            <h3 class="mb-0">Exam Timetables</h3>
-
-            @if (User.IsInRole("Admin"))
-            {
-                <a asp-action="Create"
-                   class="btn btn-light">
-                    <i class="bi bi-plus-circle"></i> Create New
-                </a>
-            }
-
+        <div>
+            <h2>Exam Timetables</h2>
+            <p class="text-muted">
+                View and manage examination schedules.
+            </p>
         </div>
 
-        <div class="card-body">
-
-            <table class="table table-hover table-striped align-middle">
-
-                <thead class="table-dark">
-
-                    <tr>
-                        <th>Module</th>
-                        <th>Exam Date</th>
-                        <th>Start Time</th>
-                        <th>Duration</th>
-                        <th>Venue</th>
-                        <th width="250">Actions</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-
-                            <td>@item.Module?.Code</td>
-
-                            <td>@item.ExamDate.ToString("dd MMM yyyy")</td>
-
-                            <td>@item.StartTime.ToString(@"hh\:mm")</td>
-
-                            <td>@item.DurationMinutes mins</td>
-
-                            <td>@item.Venue</td>
-
-                            <td>
-
-                                <a asp-action="Details"
-                                   asp-route-id="@item.ExamTimetableId"
-                                   class="btn btn-info btn-sm">
-                                    Details
-                                </a>
-
-                                @if (User.IsInRole("Admin"))
-                                {
-                                    <a asp-action="Edit"
-                                       asp-route-id="@item.ExamTimetableId"
-                                       class="btn btn-warning btn-sm">
-                                        Edit
-                                    </a>
-
-                                    <a asp-action="Delete"
-                                       asp-route-id="@item.ExamTimetableId"
-                                       class="btn btn-danger btn-sm">
-                                        Delete
-                                    </a>
-                                }
-
-                            </td>
-
-                        </tr>
-                    }
-
-                </tbody>
-
-            </table>
-
-        </div>
-
-        <div class="card-footer">
+        <div>
 
             @if (User.IsInRole("Admin"))
             {
@@ -98,25 +25,178 @@
                    class="btn btn-secondary">
                     ← Back to Admin Dashboard
                 </a>
+
+                
+
+                <a asp-action="Create"
+                   class="btn btn-primary">
+                    ➕ Create Exam Timetable
+                </a>
             }
 
-            @if (User.IsInRole("Lecturer"))
+            else if (User.IsInRole("Lecturer"))
             {
                 <a asp-controller="Lecturer"
                    asp-action="LecturerDashboard"
                    class="btn btn-secondary">
-                    ← Back to Lecturer Dashboard
+                    ⬅ Back to Dashboard
                 </a>
             }
 
-            @if (User.IsInRole("Student"))
+            else if (User.IsInRole("Student"))
             {
                 <a asp-controller="Student"
                    asp-action="StudentDashboard"
                    class="btn btn-secondary">
-                    ← Back to Student Dashboard
+                    ⬅ Back to Dashboard
                 </a>
             }
+
+        </div>
+
+    </div>
+
+    <!-- SEARCH -->
+
+    <div class="card shadow mb-4">
+
+        <div class="card-body">
+
+            <form asp-action="Index" method="get">
+
+                <div class="input-group">
+
+                    <input type="text"
+                           name="searchString"
+                           value="@ViewData["CurrentFilter"]"
+                           class="form-control"
+                           placeholder="Search by Module Code, Venue or Date..." />
+
+                    <button class="btn btn-primary"
+                            type="submit">
+                        🔍 Search
+                    </button>
+
+                    <a asp-action="Index"
+                       class="btn btn-secondary">
+                        Clear
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- TABLE -->
+
+    <div class="card shadow">
+
+        <div class="card-header bg-primary text-white">
+
+            <h5 class="mb-0">
+                Examination Schedule
+            </h5>
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="table-responsive">
+
+                <table class="table table-hover table-striped align-middle">
+
+                    <thead class="table-dark">
+
+                        <tr>
+
+                            <th>Module Code</th>
+
+                            <th>Exam Date</th>
+
+                            <th>Start Time</th>
+
+                            <th>Venue</th>
+
+                            <th width="240">Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        @if (Model.Any())
+                        {
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @item.Module?.Code
+                                    </td>
+
+                                    <td>
+                                        @item.ExamDate.ToString("dd MMM yyyy")
+                                    </td>
+
+                                    <td>
+                                        @item.StartTime
+                                    </td>
+
+                                    <td>
+                                        @item.Venue
+                                    </td>
+
+                                    <td>
+
+                                        <a asp-action="Details"
+                                           asp-route-id="@item.ExamTimetableId"
+                                           class="btn btn-info btn-sm">
+                                            Details
+                                        </a>
+
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <a asp-action="Edit"
+                                               asp-route-id="@item.ExamTimetableId"
+                                               class="btn btn-warning btn-sm">
+                                                Edit
+                                            </a>
+
+                                            <a asp-action="Delete"
+                                               asp-route-id="@item.ExamTimetableId"
+                                               class="btn btn-danger btn-sm">
+                                                Delete
+                                            </a>
+                                        }
+
+                                    </td>
+
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+
+                                <td colspan="5"
+                                    class="text-center text-muted">
+
+                                    No examination timetables found.
+
+                                </td>
+
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+
+            </div>
 
         </div>
 

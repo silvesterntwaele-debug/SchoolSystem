@@ -8,7 +8,7 @@
 
     <div class="card shadow">
 
-        <div class="card-header bg-info text-white">
+        <div class="card-header bg-primary text-white">
             <h3>Student Details</h3>
         </div>
 
@@ -16,153 +16,75 @@
 
             <dl class="row">
 
-                <dt class="col-sm-3">Email</dt>
+                <dt class="col-sm-3">
+                    Email
+                </dt>
+
                 <dd class="col-sm-9">
-                    @(Model.User?.Email ?? "Not Assigned")
+                    @(Model.User?.Email ?? "No User Assigned")
                 </dd>
 
-                <dt class="col-sm-3">Username</dt>
-                <dd class="col-sm-9">
-                    @(Model.User?.UserName ?? "N/A")
-                </dd>
+                <dt class="col-sm-3">
+                    Student Number
+                </dt>
 
-                <dt class="col-sm-3">Student Number</dt>
                 <dd class="col-sm-9">
                     @Model.StudentNumber
                 </dd>
 
-                <dt class="col-sm-3">Programme</dt>
+                <dt class="col-sm-3">
+                    Programme
+                </dt>
+
                 <dd class="col-sm-9">
                     @Model.Program
                 </dd>
 
-                <dt class="col-sm-3">Year of Study</dt>
+                <dt class="col-sm-3">
+                    Year of Study
+                </dt>
+
                 <dd class="col-sm-9">
                     @Model.YearOfStudy
                 </dd>
 
             </dl>
 
-            <hr />
-
-            <h5>Registrations</h5>
-
-            @if (Model.Registrations.Any())
-            {
-                <table class="table table-bordered">
-
-                    <thead>
-                        <tr>
-                            <th>Module</th>
-                            <th>Semester</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        @foreach (var reg in Model.Registrations)
-                        {
-                            <tr>
-                                <td>@reg.Module?.Name</td>
-                                <td>@reg.Semester</td>
-                                
-                            </tr>
-                        }
-
-                    </tbody>
-
-                </table>
-            }
-            else
-            {
-                <p class="text-muted">No registrations.</p>
-            }
-
-            <h5 class="mt-4">Marks</h5>
-
-            @if (Model.Marks.Any())
-            {
-                <table class="table table-bordered">
-
-                    <thead>
-                        <tr>
-                            <th>Module</th>
-                            <th>Assessment</th>
-                            <th>Score</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        @foreach (var mark in Model.Marks)
-                        {
-                            <tr>
-                                <td>@mark.Module?.Name</td>
-                                <td>@mark.AssessmentType</td>
-                                <td>@mark.Score%</td>
-                            </tr>
-                        }
-
-                    </tbody>
-
-                </table>
-            }
-            else
-            {
-                <p class="text-muted">No marks recorded.</p>
-            }
-
-            <h5 class="mt-4">Invoices</h5>
-
-            @if (Model.Invoices.Any())
-            {
-                <table class="table table-bordered">
-
-                    <thead>
-                        <tr>
-                            <th>Description</th>
-                            <th>Amount Due</th>
-                            <th>Amount Paid</th>
-                            <th>Balance</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        @foreach (var invoice in Model.Invoices)
-                        {
-                            <tr>
-                                <td>@invoice.Description</td>
-                                <td>@invoice.AmountDue.ToString("C")</td>
-                                <td>@invoice.AmountPaid.ToString("C")</td>
-                                <td>@invoice.Balance.ToString("C")</td>
-                            </tr>
-                        }
-
-                    </tbody>
-
-                </table>
-            }
-            else
-            {
-                <p class="text-muted">No invoices.</p>
-            }
-
         </div>
 
         <div class="card-footer">
 
-            <a asp-action="Edit"
-               asp-route-id="@Model.StudentId"
-               class="btn btn-warning">
-                Edit
-            </a>
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-action="Edit"
+                   asp-route-id="@Model.StudentId"
+                   class="btn btn-warning">
+                    Edit
+                </a>
+            }
 
             <a asp-action="Index"
-               class="btn btn-secondary">
+               class="btn btn-info">
                 Back to List
             </a>
+
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-controller="Admin"
+                   asp-action="AdminDashboard"
+                   class="btn btn-secondary">
+                    ← Dashboard
+                </a>
+            }
+
+            @if (User.IsInRole("Lecturer"))
+            {
+                <a asp-controller="Lecturer"
+                   asp-action="LecturerDashboard"
+                   class="btn btn-secondary">
+                    ← Dashboard
+                </a>
+            }
 
         </div>
 

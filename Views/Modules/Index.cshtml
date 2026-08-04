@@ -6,136 +6,197 @@
 
 <div class="container mt-4">
 
+    <!-- HEADER -->
+
     <div class="d-flex justify-content-between align-items-center mb-4">
 
         <div>
             <h2>Modules</h2>
-
             <p class="text-muted">
-                @if (User.IsInRole("Admin"))
-                {
-                    <text>Manage all university modules.</text>
-                }
-                else
-                {
-                    <text>View available university modules.</text>
-                }
+                View and manage all modules.
             </p>
         </div>
 
-        @if (User.IsInRole("Admin"))
-        {
-            <a asp-action="Create"
-               class="btn btn-primary">
-                Create Module
-            </a>
-        }
+        <div>
+
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-controller="Admin"
+                   asp-action="AdminDashboard"
+                   class="btn btn-secondary me-2">
+                    ⬅ Back to Dashboard
+                </a>
+
+                <a asp-action="Create"
+                   class="btn btn-primary">
+                    ➕ Create Module
+                </a>
+            }
+
+            else if (User.IsInRole("Lecturer"))
+            {
+                <a asp-controller="Lecturer"
+                   asp-action="LecturerDashboard"
+                   class="btn btn-secondary">
+                    ⬅ Back to Dashboard
+                </a>
+            }
+
+        </div>
 
     </div>
+
+    <!-- SUCCESS -->
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
+
+    <!-- SEARCH -->
+
+    <div class="card shadow mb-4">
+
+        <div class="card-body">
+
+            <form asp-action="Index" method="get">
+
+                <div class="input-group">
+
+                    <input type="text"
+                           name="searchString"
+                           value="@ViewData["CurrentFilter"]"
+                           class="form-control"
+                           placeholder="Search by Lecturer Staff Number..." />
+
+                    <button class="btn btn-primary"
+                            type="submit">
+                        🔍 Search
+                    </button>
+
+                    <a asp-action="Index"
+                       class="btn btn-secondary">
+                        Clear
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- TABLE -->
 
     <div class="card shadow">
 
         <div class="card-header bg-primary text-white">
-            <h5 class="mb-0">Module List</h5>
+            <h5 class="mb-0">
+                Module List
+            </h5>
         </div>
 
         <div class="card-body">
 
-            <table class="table table-hover table-striped">
+            <div class="table-responsive">
 
-                <thead class="table-dark">
+                <table class="table table-hover table-striped align-middle">
 
-                    <tr>
-                        <th>Code</th>
-                        <th>Name</th>
-                        <th>Credits</th>
-                        <th>Capacity</th>
-                        <th>Lecturer</th>
-                        <th width="250">Actions</th>
-                    </tr>
+                    <thead class="table-dark">
 
-                </thead>
-
-                <tbody>
-
-                    @foreach (var item in Model)
-                    {
                         <tr>
 
-                            <td>@item.Code</td>
+                            <th>Code</th>
 
-                            <td>@item.Name</td>
+                            <th>Module Name</th>
 
-                            <td>@item.Credits</td>
+                            <th>Credits</th>
 
-                            <td>@item.Capacity</td>
+                            <th>Lecturer Staff Number</th>
 
-                            <td>@item.Lecturer?.StaffNumber</td>
-
-                            <td>
-
-                                <a asp-action="Details"
-                                   asp-route-id="@item.ModuleId"
-                                   class="btn btn-info btn-sm">
-                                    Details
-                                </a>
-
-                                @if (User.IsInRole("Admin"))
-                                {
-                                    <a asp-action="Edit"
-                                       asp-route-id="@item.ModuleId"
-                                       class="btn btn-warning btn-sm">
-                                        Edit
-                                    </a>
-
-                                    <a asp-action="Delete"
-                                       asp-route-id="@item.ModuleId"
-                                       class="btn btn-danger btn-sm">
-                                        Delete
-                                    </a>
-                                }
-
-                            </td>
+                            <th width="250">
+                                Actions
+                            </th>
 
                         </tr>
-                    }
 
-                </tbody>
+                    </thead>
 
-            </table>
+                    <tbody>
+
+                        @if (Model.Any())
+                        {
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @item.Code
+                                    </td>
+
+                                    <td>
+                                        @item.Name
+                                    </td>
+
+                                    <td>
+                                        @item.Credits
+                                    </td>
+
+                                    <td>
+                                        @(item.Lecturer?.StaffNumber ?? "Not Assigned")
+                                    </td>
+
+                                    <td>
+
+                                        <a asp-action="Details"
+                                           asp-route-id="@item.ModuleId"
+                                           class="btn btn-info btn-sm">
+                                            Details
+                                        </a>
+
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <a asp-action="Edit"
+                                               asp-route-id="@item.ModuleId"
+                                               class="btn btn-warning btn-sm">
+                                                Edit
+                                            </a>
+
+                                            <a asp-action="Delete"
+                                               asp-route-id="@item.ModuleId"
+                                               class="btn btn-danger btn-sm">
+                                                Delete
+                                            </a>
+                                        }
+
+                                    </td>
+
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+
+                                <td colspan="5"
+                                    class="text-center text-muted">
+
+                                    No modules found.
+
+                                </td>
+
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+
+            </div>
 
         </div>
-
-    </div>
-
-    <hr />
-
-    <div class="mt-3">
-
-        @if (User.IsInRole("Admin"))
-        {
-            <a asp-controller="Admin"
-               asp-action="AdminDashboard"
-               class="btn btn-secondary">
-                ← Back to Admin Dashboard
-            </a>
-        }
-        else if (User.IsInRole("Lecturer"))
-        {
-            <a asp-controller="Lecturer"
-               asp-action="LecturerDashboard"
-               class="btn btn-secondary">
-                ← Back to Lecturer Dashboard
-            </a>
-        }
-        else if (User.IsInRole("Student"))
-        {
-            <a asp-controller="Student"
-               asp-action="StudentDashboard"
-               class="btn btn-secondary">
-                ← Back to Student Dashboard
-            </a>
-        }
 
     </div>
 

@@ -25,8 +25,9 @@ namespace SchoolSystem.Controllers
             ViewBag.InvoiceCount = await _context.Invoices.CountAsync();
 			ViewBag.PaymentCount = await _context.Payments.CountAsync();
 			ViewBag.ExamCount = await _context.ExamTimetables.CountAsync();
+            ViewBag.AuditCount = await _context.Audits.CountAsync();
 
-			return View();
+            return View();
 		}
 	}
 }

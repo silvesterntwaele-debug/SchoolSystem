@@ -20,13 +20,37 @@ namespace SchoolSystem.Controllers
         // =========================
         // INDEX
         // =========================
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            var exams = await _context.ExamTimetables
-                .Include(e => e.Module)
-                .ToListAsync();
+            ViewData["CurrentFilter"] = searchString;
 
-            return View(exams);
+            var exams = _context.ExamTimetables
+                .Include(e => e.Module)
+                .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(searchString))
+            {
+                exams = exams.Where(e =>
+
+                    (e.Module != null &&
+                     e.Module.Code.Contains(searchString))
+
+                    ||
+
+                    (e.Venue != null &&
+                     e.Venue.Contains(searchString))
+
+                    ||
+
+                    e.ExamDate.ToString().Contains(searchString)
+
+                );
+            }
+
+            return View(await exams
+                .OrderBy(e => e.ExamDate)
+                .ThenBy(e => e.StartTime)
+                .ToListAsync());
         }
 
         // =========================

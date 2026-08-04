@@ -9,7 +9,7 @@ using SchoolSystem.ViewModels;
 
 namespace SchoolSystem.Controllers
 {
-    [Authorize(Roles = "Admin,Student")]
+    [Authorize(Roles = "Admin,Lecturer,Student")]
     public class RegistrationsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -24,30 +24,43 @@ namespace SchoolSystem.Controllers
         }
 
         //====================================================
-        // INDEX
+        // INDEX WITH SEARCH
         //====================================================
-
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            //==============================
-            // ADMIN
-            //==============================
+            ViewData["CurrentFilter"] = searchString;
 
-            if (User.IsInRole("Admin"))
+            //==================================================
+            // ADMIN OR LECTURER
+            //==================================================
+            if (User.IsInRole("Admin") || User.IsInRole("Lecturer"))
             {
-                var registrations = await _context.Registrations
+                var registrations = _context.Registrations
                     .Include(r => r.Student)
+                        .ThenInclude(s => s.User)
                     .Include(r => r.Module)
-                    .OrderBy(r => r.Student.StudentNumber)
-                    .ThenBy(r => r.Module.Code)
-                    .ToListAsync();
+                    .AsQueryable();
 
-                return View(registrations);
+                if (!string.IsNullOrWhiteSpace(searchString))
+                {
+                    searchString = searchString.ToLower();
+
+                    registrations = registrations.Where(r =>
+                        r.Student.StudentNumber.ToLower().Contains(searchString) ||
+                        r.Module.Code.ToLower().Contains(searchString) ||
+                        r.Semester.ToLower().Contains(searchString));
+                }
+
+                registrations = registrations
+                    .OrderBy(r => r.Student.StudentNumber)
+                    .ThenBy(r => r.Module.Code);
+
+                return View(await registrations.ToListAsync());
             }
 
-            //==============================
+            //==================================================
             // STUDENT
-            //==============================
+            //==================================================
 
             var user = await _userManager.GetUserAsync(User);
 
@@ -60,20 +73,30 @@ namespace SchoolSystem.Controllers
             if (student == null)
                 return NotFound();
 
-            var registrationsForStudent = await _context.Registrations
+            var studentRegistrations = _context.Registrations
                 .Include(r => r.Student)
                 .Include(r => r.Module)
                 .Where(r => r.StudentId == student.StudentId)
-                .OrderBy(r => r.Module.Code)
-                .ToListAsync();
+                .AsQueryable();
 
-            return View(registrationsForStudent);
+            if (!string.IsNullOrWhiteSpace(searchString))
+            {
+                searchString = searchString.ToLower();
+
+                studentRegistrations = studentRegistrations.Where(r =>
+                    r.Module.Code.ToLower().Contains(searchString) ||
+                    r.Semester.ToLower().Contains(searchString));
+            }
+
+            studentRegistrations = studentRegistrations
+                .OrderBy(r => r.Module.Code);
+
+            return View(await studentRegistrations.ToListAsync());
         }
 
         //====================================================
         // DETAILS
         //====================================================
-
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -81,12 +104,14 @@ namespace SchoolSystem.Controllers
 
             var registration = await _context.Registrations
                 .Include(r => r.Student)
+                    .ThenInclude(s => s.User)
                 .Include(r => r.Module)
                 .FirstOrDefaultAsync(r => r.RegistrationId == id);
 
             if (registration == null)
                 return NotFound();
 
+            // Students may only view their own registrations
             if (User.IsInRole("Student"))
             {
                 var user = await _userManager.GetUserAsync(User);
@@ -106,7 +131,6 @@ namespace SchoolSystem.Controllers
 
             return View(registration);
         }
-
         //====================================================
         // CREATE
         //====================================================
@@ -134,7 +158,6 @@ namespace SchoolSystem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(RegistrationViewModel model)
         {
-            // Reload dropdown and modules if the page needs to be redisplayed
             ViewBag.StudentId = new SelectList(
                 _context.Students.OrderBy(s => s.StudentNumber),
                 "StudentId",
@@ -202,6 +225,7 @@ namespace SchoolSystem.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
         //====================================================
         // EDIT
         //====================================================
@@ -296,6 +320,7 @@ namespace SchoolSystem.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
         //====================================================
         // DELETE
         //====================================================
@@ -339,7 +364,7 @@ namespace SchoolSystem.Controllers
                     EntityName = "Registration",
                     EntityId = registration.RegistrationId,
                     PerformedByUserId = User.Identity?.Name ?? "System",
-                    Details = $"Student {registration.Student.StudentNumber} was removed from Module {registration.Module.Code}.",
+                    Details = $"Student {registration.Student?.StudentNumber} was removed from Module {registration.Module?.Code}.",
                     Timestamp = DateTime.UtcNow
                 });
 
@@ -350,6 +375,11 @@ namespace SchoolSystem.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+        
+        //====================================================
+        // DELETE
+        //====================================================
+
 
         //====================================================
         // EXISTS

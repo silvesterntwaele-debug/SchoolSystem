@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using SchoolSystem.Models;
 using SchoolSystem.Data;
+using SchoolSystem.Models;
 
 namespace SchoolSystem.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin,Lecturer")]
     public class ModulesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -20,10 +20,21 @@ namespace SchoolSystem.Controllers
         //=========================================
         // INDEX
         //=========================================
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
+            ViewData["CurrentFilter"] = searchString;
+
             var modules = _context.Modules
-                .Include(m => m.Lecturer);
+                .Include(m => m.Lecturer)
+                .AsQueryable();
+
+            // Search ONLY by Lecturer Staff Number
+            if (!string.IsNullOrWhiteSpace(searchString))
+            {
+                modules = modules.Where(m =>
+                    m.Lecturer != null &&
+                    m.Lecturer.StaffNumber.Contains(searchString));
+            }
 
             return View(await modules.ToListAsync());
         }
@@ -50,51 +61,57 @@ namespace SchoolSystem.Controllers
         //=========================================
         // CREATE
         //=========================================
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
-            ViewData["LecturerId"] =
-                new SelectList(_context.Lecturers, "LecturerId", "StaffNumber");
+            ViewData["LecturerId"] = new SelectList(
+                _context.Lecturers,
+                "LecturerId",
+                "StaffNumber");
 
             return View();
         }
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Create(Module module)
-		{
-			if (!ModelState.IsValid)
-			{
-				ViewData["LecturerId"] = new SelectList(
-					_context.Lecturers,
-					"LecturerId",
-					"StaffNumber",
-					module.LecturerId);
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create(Module module)
+        {
+            if (!ModelState.IsValid)
+            {
+                ViewData["LecturerId"] = new SelectList(
+                    _context.Lecturers,
+                    "LecturerId",
+                    "StaffNumber",
+                    module.LecturerId);
 
-				return View(module);
-			}
+                return View(module);
+            }
 
-			_context.Modules.Add(module);
-			await _context.SaveChangesAsync();
+            _context.Modules.Add(module);
+            await _context.SaveChangesAsync();
 
-			_context.Audits.Add(new Audit
-			{
-				Action = "Module Created",
-				EntityName = "Module",
-				EntityId = module.ModuleId,
-				PerformedByUserId = User.Identity?.Name ?? "System",
-				Details = $"Module {module.Code} - {module.Name} created.",
-				Timestamp = DateTime.UtcNow
-			});
+            _context.Audits.Add(new Audit
+            {
+                Action = "Module Created",
+                EntityName = "Module",
+                EntityId = module.ModuleId,
+                PerformedByUserId = User.Identity?.Name ?? "System",
+                Details = $"Module {module.Code} - {module.Name} created.",
+                Timestamp = DateTime.UtcNow
+            });
 
-			await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
 
-			return RedirectToAction(nameof(Index));
-		}
+            TempData["Success"] = "Module created successfully.";
 
+            return RedirectToAction(nameof(Index));
+        }
 
-		//=========================================
-		// EDIT
-		//=========================================
-		public async Task<IActionResult> Edit(int? id)
+        //=========================================
+        // EDIT
+        //=========================================
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
                 return NotFound();
@@ -104,61 +121,69 @@ namespace SchoolSystem.Controllers
             if (module == null)
                 return NotFound();
 
-            ViewData["LecturerId"] =
-                new SelectList(_context.Lecturers, "LecturerId", "StaffNumber", module.LecturerId);
+            ViewData["LecturerId"] = new SelectList(
+                _context.Lecturers,
+                "LecturerId",
+                "StaffNumber",
+                module.LecturerId);
 
             return View(module);
         }
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Edit(int id, Module module)
-		{
-			if (id != module.ModuleId)
-				return NotFound();
 
-			if (!ModelState.IsValid)
-			{
-				ViewData["LecturerId"] = new SelectList(
-					_context.Lecturers,
-					"LecturerId",
-					"StaffNumber",
-					module.LecturerId);
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Edit(int id, Module module)
+        {
+            if (id != module.ModuleId)
+                return NotFound();
 
-				return View(module);
-			}
+            if (!ModelState.IsValid)
+            {
+                ViewData["LecturerId"] = new SelectList(
+                    _context.Lecturers,
+                    "LecturerId",
+                    "StaffNumber",
+                    module.LecturerId);
 
-			try
-			{
-				_context.Update(module);
-				await _context.SaveChangesAsync();
+                return View(module);
+            }
 
-				_context.Audits.Add(new Audit
-				{
-					Action = "Module Updated",
-					EntityName = "Module",
-					EntityId = module.ModuleId,
-					PerformedByUserId = User.Identity?.Name ?? "System",
-					Details = $"Module {module.Code} updated.",
-					Timestamp = DateTime.UtcNow
-				});
+            try
+            {
+                _context.Update(module);
+                await _context.SaveChangesAsync();
 
-				await _context.SaveChangesAsync();
-			}
-			catch (DbUpdateConcurrencyException)
-			{
-				if (!ModuleExists(module.ModuleId))
-					return NotFound();
+                _context.Audits.Add(new Audit
+                {
+                    Action = "Module Updated",
+                    EntityName = "Module",
+                    EntityId = module.ModuleId,
+                    PerformedByUserId = User.Identity?.Name ?? "System",
+                    Details = $"Module {module.Code} updated.",
+                    Timestamp = DateTime.UtcNow
+                });
 
-				throw;
-			}
+                await _context.SaveChangesAsync();
 
-			return RedirectToAction(nameof(Index));
-		}
+                TempData["Success"] = "Module updated successfully.";
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ModuleExists(module.ModuleId))
+                    return NotFound();
 
-		//=========================================
-		// DELETE
-		//=========================================
-		public async Task<IActionResult> Delete(int? id)
+                throw;
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        //=========================================
+        // DELETE
+        //=========================================
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
                 return NotFound();
@@ -172,9 +197,9 @@ namespace SchoolSystem.Controllers
 
             return View(module);
         }
-
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var module = await _context.Modules.FindAsync(id);
@@ -194,6 +219,8 @@ namespace SchoolSystem.Controllers
                 });
 
                 await _context.SaveChangesAsync();
+
+                TempData["Success"] = "Module deleted successfully.";
             }
 
             return RedirectToAction(nameof(Index));

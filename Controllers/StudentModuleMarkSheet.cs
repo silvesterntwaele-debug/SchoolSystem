@@ -37,7 +37,9 @@ namespace SchoolSystem.Controllers
 
             if (sheet.Project.HasValue) marks.Add(sheet.Project.Value);
 
-            decimal classAverage = marks.Any() ? marks.Average() : 0;
+            decimal classAverage = marks.Any()
+                ? marks.Average()
+                : 0;
 
             decimal exam = sheet.Exam ?? 0;
 
@@ -48,12 +50,18 @@ namespace SchoolSystem.Controllers
         // INDEX
         //=========================================
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
+            ViewData["CurrentFilter"] = searchString;
+
             IQueryable<StudentModuleMarkSheet> marksheets =
                 _context.StudentModuleMarkSheets
-                .Include(s => s.Student)
-                .Include(s => s.Module);
+                    .Include(s => s.Student)
+                    .Include(s => s.Module);
+
+            //------------------------------------------------
+            // STUDENT
+            //------------------------------------------------
 
             if (User.IsInRole("Student"))
             {
@@ -62,7 +70,31 @@ namespace SchoolSystem.Controllers
                 marksheets = marksheets.Where(m =>
                     m.Student != null &&
                     m.Student.UserId == userId);
+
+                if (!string.IsNullOrWhiteSpace(searchString))
+                {
+                    marksheets = marksheets.Where(m =>
+                        m.Module.Code.Contains(searchString));
+                }
             }
+
+            //------------------------------------------------
+            // ADMIN / LECTURER
+            //------------------------------------------------
+
+            else
+            {
+                if (!string.IsNullOrWhiteSpace(searchString))
+                {
+                    marksheets = marksheets.Where(m =>
+                        m.Student.StudentNumber.Contains(searchString) ||
+                        m.Module.Code.Contains(searchString));
+                }
+            }
+
+            marksheets = marksheets
+                .OrderBy(m => m.Student.StudentNumber)
+                .ThenBy(m => m.Module.Code);
 
             return View(await marksheets.ToListAsync());
         }
@@ -94,7 +126,6 @@ namespace SchoolSystem.Controllers
 
             return View(sheet);
         }
-
         //=========================================
         // CREATE
         //=========================================
@@ -103,12 +134,12 @@ namespace SchoolSystem.Controllers
         public IActionResult Create()
         {
             ViewData["StudentId"] =
-                new SelectList(_context.Students,
+                new SelectList(_context.Students.OrderBy(s => s.StudentNumber),
                 "StudentId",
                 "StudentNumber");
 
             ViewData["ModuleId"] =
-                new SelectList(_context.Modules,
+                new SelectList(_context.Modules.OrderBy(m => m.Code),
                 "ModuleId",
                 "Code");
 
@@ -123,13 +154,13 @@ namespace SchoolSystem.Controllers
             if (!ModelState.IsValid)
             {
                 ViewData["StudentId"] =
-                    new SelectList(_context.Students,
+                    new SelectList(_context.Students.OrderBy(s => s.StudentNumber),
                     "StudentId",
                     "StudentNumber",
                     sheet.StudentId);
 
                 ViewData["ModuleId"] =
-                    new SelectList(_context.Modules,
+                    new SelectList(_context.Modules.OrderBy(m => m.Code),
                     "ModuleId",
                     "Code",
                     sheet.ModuleId);
@@ -143,16 +174,17 @@ namespace SchoolSystem.Controllers
 
             if (exists)
             {
-                ModelState.AddModelError("", "This student already has a marksheet for this module.");
+                ModelState.AddModelError("",
+                    "This student already has a marksheet for this module.");
 
                 ViewData["StudentId"] =
-                    new SelectList(_context.Students,
+                    new SelectList(_context.Students.OrderBy(s => s.StudentNumber),
                     "StudentId",
                     "StudentNumber",
                     sheet.StudentId);
 
                 ViewData["ModuleId"] =
-                    new SelectList(_context.Modules,
+                    new SelectList(_context.Modules.OrderBy(m => m.Code),
                     "ModuleId",
                     "Code",
                     sheet.ModuleId);
@@ -179,8 +211,11 @@ namespace SchoolSystem.Controllers
 
             await _context.SaveChangesAsync();
 
+            TempData["Success"] = "Mark sheet created successfully.";
+
             return RedirectToAction(nameof(Index));
         }
+
         //=========================================
         // EDIT
         //=========================================
@@ -197,13 +232,13 @@ namespace SchoolSystem.Controllers
                 return NotFound();
 
             ViewData["StudentId"] =
-                new SelectList(_context.Students,
+                new SelectList(_context.Students.OrderBy(s => s.StudentNumber),
                 "StudentId",
                 "StudentNumber",
                 sheet.StudentId);
 
             ViewData["ModuleId"] =
-                new SelectList(_context.Modules,
+                new SelectList(_context.Modules.OrderBy(m => m.Code),
                 "ModuleId",
                 "Code",
                 sheet.ModuleId);
@@ -222,13 +257,13 @@ namespace SchoolSystem.Controllers
             if (!ModelState.IsValid)
             {
                 ViewData["StudentId"] =
-                    new SelectList(_context.Students,
+                    new SelectList(_context.Students.OrderBy(s => s.StudentNumber),
                     "StudentId",
                     "StudentNumber",
                     sheet.StudentId);
 
                 ViewData["ModuleId"] =
-                    new SelectList(_context.Modules,
+                    new SelectList(_context.Modules.OrderBy(m => m.Code),
                     "ModuleId",
                     "Code",
                     sheet.ModuleId);
@@ -256,6 +291,8 @@ namespace SchoolSystem.Controllers
                 });
 
                 await _context.SaveChangesAsync();
+
+                TempData["Success"] = "Mark sheet updated successfully.";
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -267,7 +304,6 @@ namespace SchoolSystem.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
         //=========================================
         // DELETE
         //=========================================
@@ -311,6 +347,8 @@ namespace SchoolSystem.Controllers
                 });
 
                 await _context.SaveChangesAsync();
+
+                TempData["Success"] = "Mark sheet deleted successfully.";
             }
 
             return RedirectToAction(nameof(Index));
@@ -325,5 +363,6 @@ namespace SchoolSystem.Controllers
             return _context.StudentModuleMarkSheets
                 .Any(e => e.StudentModuleMarkSheetId == id);
         }
+
     }
 }

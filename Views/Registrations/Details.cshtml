@@ -8,61 +8,108 @@
 
     <div class="card shadow">
 
-        <div class="card-header bg-info text-white">
+        <div class="card-header bg-primary text-white">
             <h3>Registration Details</h3>
         </div>
 
         <div class="card-body">
 
-            <table class="table table-bordered">
+            <dl class="row">
 
-                <tr>
-                    <th width="30%">Student Number</th>
-                    <td>@Model.Student?.StudentNumber</td>
-                </tr>
+                <dt class="col-sm-3">
+                    Student Number
+                </dt>
 
-                <tr>
-                    <th>Module Code</th>
-                    <td>@Model.Module?.Code</td>
-                </tr>
+                <dd class="col-sm-9">
+                    @Model.Student?.StudentNumber
+                </dd>
 
-                <tr>
-                    <th>Module Name</th>
-                    <td>@Model.Module?.Name</td>
-                </tr>
+                <dt class="col-sm-3">
+                    Student Email
+                </dt>
 
-                <tr>
-                    <th>Semester</th>
-                    <td>@Model.Semester</td>
-                </tr>
+                <dd class="col-sm-9">
+                    @Model.Student?.User?.Email
+                </dd>
 
-                <tr>
-                    <th>Registration Date</th>
-                    <td>@Model.RegisteredOn.ToString("dd MMMM yyyy")</td>
-                </tr>
+                <dt class="col-sm-3">
+                    Module Code
+                </dt>
 
-            </table>
+                <dd class="col-sm-9">
+                    @Model.Module?.Code
+                </dd>
+
+                <dt class="col-sm-3">
+                    Module Name
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.Module?.Name
+                </dd>
+
+                <dt class="col-sm-3">
+                    Semester
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.Semester
+                </dd>
+
+                <dt class="col-sm-3">
+                    Registered On
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.RegisteredOn.ToLongDateString()
+                </dd>
+
+            </dl>
 
         </div>
 
         <div class="card-footer">
 
-            <a asp-action="Edit"
-               asp-route-id="@Model.RegistrationId"
-               class="btn btn-warning">
-                Edit
-            </a>
-
-            <a asp-action="Delete"
-               asp-route-id="@Model.RegistrationId"
-               class="btn btn-danger">
-                Delete
-            </a>
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-action="Edit"
+                   asp-route-id="@Model.RegistrationId"
+                   class="btn btn-warning">
+                    Edit
+                </a>
+            }
 
             <a asp-action="Index"
-               class="btn btn-secondary">
+               class="btn btn-info">
                 Back to List
             </a>
+
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-controller="Admin"
+                   asp-action="AdminDashboard"
+                   class="btn btn-secondary">
+                    Dashboard
+                </a>
+            }
+
+            @if (User.IsInRole("Lecturer"))
+            {
+                <a asp-controller="Lecturer"
+                   asp-action="LecturerDashboard"
+                   class="btn btn-secondary">
+                    Dashboard
+                </a>
+            }
+
+            @if (User.IsInRole("Student"))
+            {
+                <a asp-controller="Student"
+                   asp-action="StudentDashboard"
+                   class="btn btn-secondary">
+                    Dashboard
+                </a>
+            }
 
         </div>
 

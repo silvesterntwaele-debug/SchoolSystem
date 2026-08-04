@@ -21,40 +21,68 @@ namespace SchoolSystem.Controllers
             _context = context;
             _userManager = userManager;
         }
-
         //====================================================
         // INDEX
         //====================================================
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
+            ViewData["CurrentFilter"] = searchString;
+
+            //====================================================
+            // ADMIN
+            //====================================================
             if (User.IsInRole("Admin"))
             {
-                var payments = await _context.Payments
+                var payments = _context.Payments
                     .Include(p => p.Invoice)
-                    .ThenInclude(i => i.Student)
-                    .OrderByDescending(p => p.PaidOn)
-                    .ToListAsync();
+                        .ThenInclude(i => i.Student)
+                    .AsQueryable();
 
-                return View(payments);
+                if (!string.IsNullOrWhiteSpace(searchString))
+                {
+                    payments = payments.Where(p =>
+                        p.Invoice.Student.StudentNumber.Contains(searchString) ||
+                        p.InvoiceId.ToString().Contains(searchString));
+                }
+
+                payments = payments.OrderByDescending(p => p.PaidOn);
+
+                return View(await payments.ToListAsync());
             }
 
+            //====================================================
+            // STUDENT
+            //====================================================
+
             var user = await _userManager.GetUserAsync(User);
-            if (user == null) return Challenge();
+
+            if (user == null)
+                return Challenge();
 
             var student = await _context.Students
                 .FirstOrDefaultAsync(s => s.UserId == user.Id);
 
-            if (student == null) return NotFound();
+            if (student == null)
+                return NotFound();
 
-            var studentPayments = await _context.Payments
+            var studentPayments = _context.Payments
                 .Include(p => p.Invoice)
-                .ThenInclude(i => i.Student)
+                    .ThenInclude(i => i.Student)
                 .Where(p => p.Invoice.StudentId == student.StudentId)
-                .OrderByDescending(p => p.PaidOn)
-                .ToListAsync();
+                .AsQueryable();
 
-            return View(studentPayments);
+            if (!string.IsNullOrWhiteSpace(searchString))
+            {
+                studentPayments = studentPayments.Where(p =>
+                    p.InvoiceId.ToString().Contains(searchString));
+            }
+
+            studentPayments = studentPayments
+                .OrderByDescending(p => p.PaidOn);
+
+            return View(await studentPayments.ToListAsync());
         }
+
 
         //====================================================
         // DETAILS

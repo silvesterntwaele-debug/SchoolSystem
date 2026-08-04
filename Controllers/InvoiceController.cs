@@ -25,20 +25,53 @@ namespace SchoolSystem.Controllers
         //====================================================
         // INDEX
         //====================================================
-        public async Task<IActionResult> Index()
+
+        public async Task<IActionResult> Index(string searchString)
         {
-            // Admin sees every invoice
+            ViewData["CurrentFilter"] = searchString;
+
+            //==============================
+            // ADMIN
+            //==============================
+
             if (User.IsInRole("Admin"))
             {
-                var invoices = await _context.Invoices
+                var invoices = _context.Invoices
                     .Include(i => i.Student)
-                    .OrderByDescending(i => i.CreatedOn)
-                    .ToListAsync();
+                    .AsQueryable();
 
-                return View(invoices);
+                if (!string.IsNullOrWhiteSpace(searchString))
+                {
+                    searchString = searchString.Trim();
+
+                    invoices = invoices.Where(i =>
+
+                        i.InvoiceId.ToString().Contains(searchString)
+
+                        ||
+
+                        i.Student.StudentNumber.Contains(searchString)
+
+                        ||
+
+                       
+
+                       
+
+                        i.CreatedOn.ToString().Contains(searchString)
+
+                    );
+                }
+
+                return View(await invoices
+                    .OrderByDescending(i => i.CreatedOn)
+                    .ToListAsync());
             }
 
-            // Student only sees their own invoices
+            //==============================
+            // STUDENT
+            //==============================
+
             var user = await _userManager.GetUserAsync(User);
 
             if (user == null)
@@ -50,13 +83,30 @@ namespace SchoolSystem.Controllers
             if (student == null)
                 return NotFound();
 
-            var invoicesList = await _context.Invoices
+            var studentInvoices = _context.Invoices
                 .Include(i => i.Student)
-                .Where(i => i.StudentId == student.StudentId)
-                .OrderByDescending(i => i.CreatedOn)
-                .ToListAsync();
+                .Where(i => i.StudentId == student.StudentId);
 
-            return View(invoicesList);
+            if (!string.IsNullOrWhiteSpace(searchString))
+            {
+                searchString = searchString.Trim();
+
+                studentInvoices = studentInvoices.Where(i =>
+
+                    i.InvoiceId.ToString().Contains(searchString)
+
+                    ||
+
+                 
+
+                    i.CreatedOn.ToString().Contains(searchString)
+
+                );
+            }
+
+            return View(await studentInvoices
+                .OrderByDescending(i => i.CreatedOn)
+                .ToListAsync());
         }
 
         //====================================================
